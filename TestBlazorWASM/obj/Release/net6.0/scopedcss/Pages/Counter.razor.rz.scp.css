@@ -1,0 +1,60 @@
+.no-margin[b-x4jex87nq9] {
+    margin: 0px;
+}
+.count[b-x4jex87nq9] {
+    font-size: 2rem;
+}
+.sizeBtn[b-x4jex87nq9] {
+    background-color: orange;
+}
+.cube-container[b-x4jex87nq9] {
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 4px;
+}
+.posicube-container[b-x4jex87nq9] {
+    align-self: end;
+
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-content: end;
+}
+.negacube-container[b-x4jex87nq9] {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: start;
+}
+.cube[b-x4jex87nq9] {
+    margin: 1px;
+    display: inline-block;
+}
+.posicube[b-x4jex87nq9] {
+    background-color: green;
+}
+.negacube[b-x4jex87nq9] {
+    background-color: darkred;
+}
+
+/* controlled via razor class (C# adds and removes classes to element) */
+.xsCubeSize[b-x4jex87nq9] {
+    width: 3px;
+    height: 3px;
+}
+.sCubeSize[b-x4jex87nq9] {
+    width: 5px;
+    height: 5px;
+}
+.mCubeSize[b-x4jex87nq9] {
+    width: 7px;
+    height: 7px;
+}
+.lCubeSize[b-x4jex87nq9] {
+    width: 10px;
+    height: 10px;
+}
+.xlCubeSize[b-x4jex87nq9] {
+    width: 15px;
+    height: 15px;
+}

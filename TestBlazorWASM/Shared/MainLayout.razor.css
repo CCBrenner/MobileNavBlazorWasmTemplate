@@ -1,0 +1,125 @@
+
+/* start Mobile view */
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: var(--top-bar-height);
+    display: flex;
+    align-items: center;
+}
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row ::deep a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.content {
+    position: fixed;
+    top: var(--top-bar-height);
+    bottom: var(--footer-height);
+    width: var(--sidebar-width-mobile);
+    overflow-y: auto;
+}
+
+footer {
+    background-color: lightgrey;
+    height: var(--footer-height);
+    position: fixed;
+    z-index: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
+
+    /* end Mobile view */
+
+}
+
+@media (min-width: 641px) {
+
+    /* start Desktop view */
+
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: var(--sidebar-width-desktop);
+        height: calc(100vh - var(--footer-height));
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .content {
+        width: calc(100vw - var(--sidebar-width-desktop));
+    }
+
+    /* end Desktop view */
+
+}

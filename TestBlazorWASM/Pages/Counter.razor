@@ -1,0 +1,40 @@
+﻿@page "/counter"
+
+<PageTitle>Counter - Test BlazorWASM</PageTitle>
+
+<h1 class="no-margin">Counter</h1>
+
+<p role="status" class="count no-margin">@CounterService.Count</p>
+
+<div>
+    Amount&nbsp;
+    <input @bind="CounterService.Amount" />
+</div>
+<div class="mt-2">
+    <button class="btn btn-primary mt-1" @onclick="CounterService.IncrementCount">Increase Count</button>
+    <button class="btn btn-secondary mt-1" @onclick="CounterService.DecrementCount">Decrease Count</button>
+    <button class="btn btn-danger mt-1" @onclick="CounterService.ResetCount">Reset Count</button>
+</div>
+<div class="mt-2">
+    <span class="mt-1">Size</span>
+    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('T'))">XS</button>  <!-- 'T' for "Tiny" -->
+    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('S'))">S</button>
+    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('M'))">M</button>
+    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('L'))">L</button>
+    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('H'))">XL</button>  <!-- 'H' for "Huge" -->
+</div>
+<br/>
+<div class="cube-container mt-2">
+    <div class="posicube-container">
+        @for (int i = 0; i < @CounterService.Count; i++)
+        {
+            <div class="cube posicube @CubeSize"></div>
+        }
+    </div>
+    <div class="negacube-container">
+        @for (int j = 0; j > @CounterService.Count; j--)
+        {
+            <div class="cube negacube @CubeSize"></div>
+        }
+    </div>
+</div>

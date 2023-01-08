@@ -1,0 +1,60 @@
+﻿.no-margin {
+    margin: 0px;
+}
+.count {
+    font-size: 2rem;
+}
+.sizeBtn {
+    background-color: orange;
+}
+.cube-container {
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 4px;
+}
+.posicube-container {
+    align-self: end;
+
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-content: end;
+}
+.negacube-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: start;
+}
+.cube {
+    margin: 1px;
+    display: inline-block;
+}
+.posicube {
+    background-color: green;
+}
+.negacube {
+    background-color: darkred;
+}
+
+/* controlled via razor class (C# adds and removes classes to element) */
+.xsCubeSize {
+    width: 3px;
+    height: 3px;
+}
+.sCubeSize {
+    width: 5px;
+    height: 5px;
+}
+.mCubeSize {
+    width: 7px;
+    height: 7px;
+}
+.lCubeSize {
+    width: 10px;
+    height: 10px;
+}
+.xlCubeSize {
+    width: 15px;
+    height: 15px;
+}
