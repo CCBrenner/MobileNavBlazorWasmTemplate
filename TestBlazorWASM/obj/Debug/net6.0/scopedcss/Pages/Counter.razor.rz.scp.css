@@ -4,7 +4,7 @@
 .count[b-x4jex87nq9] {
     font-size: 2rem;
 }
-.sizeBtn[b-x4jex87nq9] {
+.size-shape-btn-color[b-x4jex87nq9] {
     background-color: orange;
 }
 .cube-container[b-x4jex87nq9] {
@@ -38,23 +38,26 @@
 }
 
 /* controlled via razor class (C# adds and removes classes to element) */
-.xsCubeSize[b-x4jex87nq9] {
-    width: 3px;
-    height: 3px;
+.cube-circle[b-x4jex87nq9] {
+    border-radius: 50%;
 }
-.sCubeSize[b-x4jex87nq9] {
-    width: 5px;
-    height: 5px;
+
+.cube-diamond[b-x4jex87nq9] {
+    transform: rotate(45deg);  /* turns element 45deg */
+    margin: 3px;  /* visually rotated leave corners overlapping (same spacing as before), so increase space around each */
 }
-.mCubeSize[b-x4jex87nq9] {
-    width: 7px;
-    height: 7px;
+/*
+.example-class {
+    animation: deg45-offset 1s linear infinite;
 }
-.lCubeSize[b-x4jex87nq9] {
-    width: 10px;
-    height: 10px;
+    @keyframes deg45-offset {
+    0% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
 }
-.xlCubeSize[b-x4jex87nq9] {
-    width: 15px;
-    height: 15px;
-}
+*/
+

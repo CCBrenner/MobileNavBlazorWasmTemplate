@@ -2460,7 +2460,6 @@ C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_c
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\Pages\Counter.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\Pages\LoadingSpinner.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\Shared\TLNavMenu.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\bundle\TestBlazorWASM.styles.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\projectbundle\TestBlazorWASM.bundle.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\service-worker\service-worker.js
@@ -2470,3 +2469,4 @@ C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_c
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\refint\TestBlazorWASM.dll
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\TestBlazorWASM.pdb
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\ref\TestBlazorWASM.dll
+C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\TestBlazorWASM\obj\Debug\net6.0\scopedcss\Shared\BTNavMenu.razor.rz.scp.css

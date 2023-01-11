@@ -1,0 +1,222 @@
+
+/* start Mobile view */
+
+.topLevelOfComponent[b-62pb27ayxp] {
+    background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
+    z-index: 2;
+}
+
+.top-row[b-62pb27ayxp] {
+    height: var(--top-bar-height);
+    width: var(--sidebar-width-mobile);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-62pb27ayxp] {
+    font-size: 1.1rem;
+    width: var(--sidebar-width-mobile);
+}
+
+.bottom-row[b-62pb27ayxp] {
+    background-color: rgb(19, 20, 29);
+    border-radius: 14px;
+    margin: 2px;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar-buttons-container[b-62pb27ayxp] {
+    padding: 4px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-button[b-62pb27ayxp] {
+    color: white;
+    background-color: rgb(19, 20, 29);
+    border: 0px solid black;
+    border-radius: 12px;
+    height: calc(var(--top-bar-height) - 16px);
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+    .navbar-button[b-62pb27ayxp]  a {
+        /* ^^^vvv This targets the .a in the NavLink component from the NavLink's parent element. */
+        color: white;
+        background-color: rgba(0,0,0,0.0); /* Transparent .a makes .navbar-button visible */
+
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+.oi[b-62pb27ayxp] {
+    width: 1.8rem;
+    font-size: 0.9rem;
+    vertical-align: text-top;
+    top: -1px;
+}
+
+.navlink[b-62pb27ayxp] {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+
+    display: flex;
+    flex: 1;
+}
+
+.nav-item[b-62pb27ayxp] {
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+    .nav-item[b-62pb27ayxp]  a {
+        color: #d7d7d7;
+        border-radius: 12px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+    .nav-item[b-62pb27ayxp]  a.active {
+        background-color: rgba(255,255,255,0.25);
+        color: white;
+    }
+
+    .nav-item[b-62pb27ayxp]  a:hover {
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+    }
+
+.nav-item[b-62pb27ayxp]  i {
+    background-color: white;
+}
+
+.navcontainer-custom[b-62pb27ayxp] {
+    height: var(--mobile-menu-height);
+    width: 70vw;
+    padding: 4px;
+
+    z-index: 1;
+    display: none;
+    bottom: var(--footer-height);
+}
+
+.panel-position-b[b-62pb27ayxp] {
+    left: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-c[b-62pb27ayxp] {
+    left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
+}
+
+.panel-position-d[b-62pb27ayxp] {
+    right: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-e[b-62pb27ayxp] {
+    right: 0px;
+}
+
+.behind-panel[b-62pb27ayxp] {
+    height: calc(var(--top-bar-height) + var(--content-height));
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.panel[b-62pb27ayxp] {
+    border-radius: 12px;
+    background-color: rgb(19, 20, 29);
+    padding: 0.7rem 0px;
+}
+
+.panel-header[b-62pb27ayxp] {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 12px;
+    color: white;
+    padding: 4px 0px;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.panel-scrollablesection[b-62pb27ayxp] {
+    overflow-y: auto;
+    height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
+    margin: 0.5rem 0px;
+    border-radius: 12px;
+}
+
+/* start Plugable statuses */
+
+.NavButtonStatusOnPanel[b-62pb27ayxp] {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.NavButtonStatusOnPage[b-62pb27ayxp] {
+    background-color: rgba(255,255,255,0.18);
+}
+
+.NavButtonStatusOnDeepPage[b-62pb27ayxp] {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.NavPanelStatusOnPanel[b-62pb27ayxp] {
+    display: block;
+    position: fixed;
+}
+
+/* end Plugable statuses */
+
+/* end Mobile view */
+
+@media (min-width: 641px) {
+
+    /* start Desktop view */
+
+    .navbar-brand[b-62pb27ayxp] {
+        width: auto;
+    }
+
+    .navbar-toggler[b-62pb27ayxp] {
+        display: none;
+    }
+
+    .collapse[b-62pb27ayxp] {
+        display: block;
+    }
+
+    .navcontainer-custom[b-62pb27ayxp] {
+        height: var(--content-height);
+        width: auto;
+    }
+
+    .navmenu-negative[b-62pb27ayxp] {
+        display: none;
+    }
+
+    .footer[b-62pb27ayxp] {
+        z-index: 3;
+    }
+
+    /* end Desktop view */
+
+}

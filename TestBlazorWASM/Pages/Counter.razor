@@ -17,24 +17,39 @@
 </div>
 <div class="mt-2">
     <span class="mt-1">Size</span>
-    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('T'))">XS</button>  <!-- 'T' for "Tiny" -->
-    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('S'))">S</button>
-    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('M'))">M</button>
-    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('L'))">L</button>
-    <button class="btn sizeBtn mt-1" @onclick="(()=>SetCubeSize('H'))">XL</button>  <!-- 'H' for "Huge" -->
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('T'))">XS</button>  <!-- 'T' for "Tiny" -->
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('S'))">S</button>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('M'))">M</button>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('L'))">L</button>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('H'))">XL</button>  <!-- 'H' for "Huge" -->
+</div>
+<div class="mt-2">
+    <span class="mt-1">Shape</span>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeShape('S'))">Square</button>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeShape('C'))">Circle</button>
+    <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeShape('D'))">Diamond</button>
+</div>
+<div class="mt-2">
+    <span class="mt-1">Color</span>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('R'))" style="background-color: red;">&nbsp;&nbsp;&nbsp;</button>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('B'))" style="background-color: blue;">&nbsp;&nbsp;&nbsp;</button>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('G'))" style="background-color: green;">&nbsp;&nbsp;&nbsp;</button>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('Y'))" style="background-color: yellow;">&nbsp;&nbsp;&nbsp;</button>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('U'))" style="background-color: purple;">&nbsp;&nbsp;&nbsp;</button>
+    <button class="btn mt-1" @onclick="(()=>SetCubeColor('I'))" style="background-color: deeppink;">&nbsp;&nbsp;&nbsp;</button>
 </div>
 <br/>
-<div class="cube-container mt-2">
+<div class="cube-container my-2">
     <div class="posicube-container">
         @for (int i = 0; i < @CounterService.Count; i++)
         {
-            <div class="cube posicube @CubeSize"></div>
+            <div class="cube posicube @CubeShape" style="height: @CubeSize; width: @CubeSize; background-color: @CubeColor;"></div>
         }
     </div>
     <div class="negacube-container">
         @for (int j = 0; j > @CounterService.Count; j--)
         {
-            <div class="cube negacube @CubeSize"></div>
+            <div class="cube negacube @CubeShape" style="height: @CubeSize; width: @CubeSize; background-color: @CubeColor;"></div>
         }
     </div>
 </div>

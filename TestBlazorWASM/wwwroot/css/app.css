@@ -5,7 +5,7 @@
 :root {
     /* start Layout positioning values */
     --top-bar-height: 56px;  /* top */
-    --footer-height: 50px;  /* bottom */
+    --footer-height: 50px;  /* bottom (since applied to nav buttons, subtract) */
     --content-height: calc(100vh - calc(var(--top-bar-height) + var(--footer-height)));  /* middle */
 
     --sidebar-width-mobile: 100vw;
