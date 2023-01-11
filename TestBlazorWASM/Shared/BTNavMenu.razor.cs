@@ -31,7 +31,7 @@
 
         protected void UpdateNavFromBehindPanel() =>
             UpdateNav(CurrentButton);
-        protected void UpdateNav(char buttonId)
+        public void UpdateNav(char buttonId)
         {
             CurrentButton = buttonId;
             switch (buttonId)

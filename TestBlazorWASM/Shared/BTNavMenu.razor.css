@@ -17,33 +17,12 @@
     width: var(--sidebar-width-mobile);
 }
 
-.bottom-row {
-    background-color: rgb(19, 20, 29);
-    border-radius: 14px;
-    margin: 2px;
-
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
-
-.navbar-buttons-container {
-    padding: 4px;
-
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .navbar-button {
     color: white;
     background-color: rgb(19, 20, 29);
     border: 0px solid black;
     border-radius: 12px;
     height: calc(var(--top-bar-height) - 16px);
-
     display: flex;
     flex: 1;
     justify-content: center;
@@ -114,22 +93,6 @@
     z-index: 1;
     display: none;
     bottom: var(--footer-height);
-}
-
-.panel-position-b {
-    left: calc(calc(100vw - 12px) / 5);
-}
-
-.panel-position-c {
-    left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
-}
-
-.panel-position-d {
-    right: calc(calc(100vw - 12px) / 5);
-}
-
-.panel-position-e {
-    right: 0px;
 }
 
 .behind-panel {

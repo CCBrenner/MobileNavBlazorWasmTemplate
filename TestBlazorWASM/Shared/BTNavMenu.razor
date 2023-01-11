@@ -2,250 +2,217 @@
 
 <div class="topLevelOfComponent">
     
-    <!-- start Top row (Note to self: move this to MainLayer later) -->
+    <!-- start Top row (Note: cannot locate navbar and navbar-dark; cannot move to MainLayout for this reason) -->
     <div class="top-row navbar navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="">MobileNav Template</a>
-            <button title="Navigation menu" class="navbar-toggler" style="display: none;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </div>
     <!-- end Top row -->
 
-    <!-- start Bottom nav buttons -->
-    <div class="bottom-row">
-        <div class="navbar-buttons-container">
-            <!-- Note to self: May want to componentize the code from here to the next comment -->
-            <div class="navbar-button @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
-                <NavLink class="nav-link" href="testpage">
-                    <div style="display:block">
-                        <i class="icon-color fa-solid fa-vials"></i>
-                    </div>
+    <NavButtonsContainer>
+        <div class="navbar-button @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
+            <NavLink class="nav-link" href="testpage">
+                <i class="icon-color fa-solid fa-vials"></i>
+            </NavLink>
+        </div>
+        <div class="navbar-button @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
+            <NavLink class="nav-link" href="loadingspinners">
+                <i class="icon-color fa-solid fa-hand-spock"></i>
+            </NavLink>
+        </div>
+        <div class="navbar-button @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
+            <NavLink class="nav-link" href="">
+                <i class="icon-color fa-solid fa-house"></i>
+            </NavLink>
+        </div>
+        <div class="navbar-button @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
+            <NavLink class="nav-link" href="counter">
+                <i class="icon-color fa-solid fa-plus"></i>
+            </NavLink>
+        </div>
+        <div class="navbar-button @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
+            <NavLink class="nav-link" href="fetchdata">
+                <i class="icon-color fa-solid fa-cloud"></i>
+            </NavLink>
+        </div>
+    </NavButtonsContainer>
+
+    <div class="behind-panel" style="display:@BehindPanel" @onclick="UpdateNavFromBehindPanel"></div>
+
+    <NavPanelContainer PanelPosition="" NavPanelStatus="@NavPanelAStatus">
+        <div class="nav-item">
+            <div class="panel-header">
+                Test Page
+            </div>
+        </div>
+        <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
-            <!--  -->
-            <div class="navbar-button @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
-                <NavLink class="nav-link" href="loadingspinners">
-                    <i class="icon-color fa-solid fa-hand-spock"></i>
-                </NavLink>
-            </div>
-            <div class="navbar-button @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
-                <NavLink class="nav-link" href="">
-                    <i class="icon-color fa-solid fa-house"></i>
-                </NavLink>
-            </div>
-            <div class="navbar-button @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
                 <NavLink class="nav-link" href="counter">
-                    <i class="icon-color fa-solid fa-plus"></i>
+                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
                 </NavLink>
             </div>
-            <div class="navbar-button @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
                 <NavLink class="nav-link" href="fetchdata">
-                    <i class="icon-color fa-solid fa-cloud"></i>
+                    <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="loadingspinners">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Loading Spinners
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="multipagedata">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="testpage">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Test Page
+                </NavLink>
+            </div>
+            @for (int i = 0; i < 20; i++)
+            {
+                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                    <NavLink class="nav-link" href="#">
+                        <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                    </NavLink>
+                </div>
+            }
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
         </div>
-    </div>
-    <!-- end Bottom nav buttons -->
-
-    <!-- start BehindPanel (tapping to close) -->
-    <div class="behind-panel" style="display:@BehindPanel" @onclick="UpdateNavFromBehindPanel"></div>
-    <!-- end BehindPanel (tapping to close) -->
-
-    <!-- Template, 1 of 5 navigational panes. -->
-    <div class="navcontainer-custom @NavPanelAStatus">
-        <nav class="panel">
-            <!-- start panel header -->
-            <div class="nav-item">
-                <div class="panel-header">
-                    Test Page
-                </div>
+    </NavPanelContainer>
+    <NavPanelContainer PanelPosition="panel-position-b" NavPanelStatus="@NavPanelBStatus">
+        <div class="nav-item">
+            <div class="panel-header">
+                Loading Spinners
             </div>
-            <!-- end panel header -->
-            <div class="panel-scrollablesection">
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="counter">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Counter
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="fetchdata">
-                        <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="loadingspinners">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Loading Spinners
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="testpage">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Test Page
-                    </NavLink>
-                </div>
-                @for (int i = 0; i < 20; i++)
-                {
-                    <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
-                        </NavLink>
-                    </div>
-                }
-                <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
-                    </NavLink>
-                </div>
+        </div>
+        <!-- end panel header -->
+        <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                </NavLink>
             </div>
-        </nav>
-    </div>
-    <div class="navcontainer-custom panel-position-b @NavPanelBStatus">
-        <nav class="panel">
-            <!-- start panel header -->
-            <div class="nav-item">
-                <div class="panel-header">
-                    Loading Spinners
-                </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
+                <NavLink class="nav-link" href="multipagedata">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                </NavLink>
             </div>
-            <!-- end panel header -->
-            <div class="panel-scrollablesection">
-                <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
-                    <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
-                    <NavLink class="nav-link" href="counter">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Counter
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
-                    </NavLink>
-                </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
+                <NavLink class="nav-link" href="counter">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
+                </NavLink>
             </div>
-        </nav>
-    </div>
-    <div class="navcontainer-custom panel-position-c @NavPanelCStatus">
-        <nav class="panel">
-            <!-- start panel header -->
-            <div class="nav-item">
-                <div class="panel-header">
-                    Hello, world!
-                </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                </NavLink>
             </div>
-            <!-- end panel header -->
-            <div class="panel-scrollablesection">
-                <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Not Home
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
-                    </NavLink>
-                </div>
+        </div>
+    </NavPanelContainer>
+    <NavPanelContainer PanelPosition="panel-position-c" NavPanelStatus="@NavPanelCStatus">
+        <div class="nav-item">
+            <div class="panel-header">
+                Hello, world!
             </div>
-        </nav>
-    </div>
-    <div class="navcontainer-custom panel-position-d @NavPanelDStatus">
-        <nav class="panel">
-            <!-- start panel header -->
-            <div class="nav-item">
-                <div class="panel-header">
-                    Counter
-                </div>
+        </div>
+        <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                </NavLink>
             </div>
-            <!-- end panel header -->
-            <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Not Home
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                </NavLink>
+            </div>
+        </div>
+    </NavPanelContainer>
+    <NavPanelContainer PanelPosition="panel-position-d" NavPanelStatus="@NavPanelDStatus">
+        <div class="nav-item">
+            <div class="panel-header">
+                Counter
+            </div>
+        </div>
+        <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
+                <NavLink class="nav-link" href="multipagedata">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
+                <NavLink class="nav-link" href="counter">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
+                </NavLink>
+            </div>
+            @for (int i = 0; i < 20; i++)
+            {
                 <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
                     <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                        <span class="oi oi-plus" aria-hidden="true"></span>Almost Home
                     </NavLink>
                 </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                    <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
-                    </NavLink>
-                </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                    <NavLink class="nav-link" href="counter">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Counter
-                    </NavLink>
-                </div>
-                @for (int i = 0; i < 20; i++)
-                {
-                    <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Almost Home
-                        </NavLink>
-                    </div>
-                }
-                <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Last Almost Home
-                    </NavLink>
-                </div>
+            }
+            <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Last Almost Home
+                </NavLink>
             </div>
-        </nav>
-    </div>
-    <div class="navcontainer-custom panel-position-e @NavPanelEStatus">
-        <nav class="panel">
-            <!-- start panel header -->
-            <div class="nav-item">
-                <div class="panel-header">
-                    Weather Forcast
-                </div>
+        </div>
+    </NavPanelContainer>
+    <NavPanelContainer PanelPosition="panel-position-e" NavPanelStatus="@NavPanelEStatus">
+        <div class="nav-item">
+            <div class="panel-header">
+                Weather Forcast
             </div>
-            <!-- end panel header -->
-            <div class="panel-scrollablesection">
+        </div>
+        <div class="panel-scrollablesection">
+            <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                </NavLink>
+            </div>
+            <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
+                <NavLink class="nav-link" href="fetchdata">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
+                </NavLink>
+            </div>
+            @for (int i = 0; i < 20; i++)
+            {
                 <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
                     <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                        <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
                     </NavLink>
                 </div>
-                <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
-                    <NavLink class="nav-link" href="fetchdata">
-                        <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
-                    </NavLink>
-                </div>
-                @for (int i = 0; i < 20; i++)
-                {
-                    <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
-                        </NavLink>
-                    </div>
-                }
-                <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
-                    </NavLink>
-                </div>
+            }
+            <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                </NavLink>
             </div>
-        </nav>
-    </div>
+        </div>
+    </NavPanelContainer>
 </div>

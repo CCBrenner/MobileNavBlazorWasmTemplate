@@ -1,0 +1,59 @@
+﻿.navcontainer-custom {
+    height: var(--mobile-menu-height);
+    width: 70vw;
+    padding: 4px;
+    z-index: 1;
+    display: none;
+    bottom: var(--footer-height);
+}
+
+.panel {
+    border-radius: 12px;
+    background-color: rgb(19, 20, 29);
+    padding: 0.7rem 0px;
+}
+
+.panel-position-b {
+    left: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-c {
+    left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
+}
+
+.panel-position-d {
+    right: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-e {
+    right: 0px;
+}
+
+/* start Plugable statuses */
+
+.NavButtonStatusOnPanel {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.NavButtonStatusOnPage {
+    background-color: rgba(255,255,255,0.18);
+}
+
+.NavButtonStatusOnDeepPage {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.NavPanelStatusOnPanel {
+    display: block;
+    position: fixed;
+}
+
+/* end Plugable statuses */
+
+@media (min-width: 641px) {
+
+    .navcontainer-custom {
+        height: var(--content-height);
+        width: auto;
+    }
+}

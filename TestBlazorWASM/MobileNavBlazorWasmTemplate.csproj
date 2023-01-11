@@ -16,4 +16,16 @@
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\NavButtonsContainer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Shared\NavButtonsContainer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\NavButtonsContainer.razor" />
+  </ItemGroup>
+
 </Project>
