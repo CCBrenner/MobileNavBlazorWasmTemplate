@@ -1,4 +1,4 @@
-﻿namespace TestBlazorWASM.Shared
+﻿namespace MobileNavBlazorWasmTemplate.Shared
 {
     public partial class BTNavMenu
     {

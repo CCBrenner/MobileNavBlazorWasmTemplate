@@ -1,6 +1,6 @@
-﻿using TestBlazorWASM.Services.Contracts;
+﻿using MobileNavBlazorWasmTemplate.Services.Contracts;
 
-namespace TestBlazorWASM.Services
+namespace MobileNavBlazorWasmTemplate.Services
 {
     public class CounterService : ICounterService
     {

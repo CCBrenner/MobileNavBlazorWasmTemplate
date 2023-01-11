@@ -1,23 +1,23 @@
 
 /* start Mobile view */
 
-.topLevelOfComponent[b-62pb27ayxp] {
+.topLevelOfComponent[b-agt0qsar21] {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
     z-index: 2;
 }
 
-.top-row[b-62pb27ayxp] {
+.top-row[b-agt0qsar21] {
     height: var(--top-bar-height);
     width: var(--sidebar-width-mobile);
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-62pb27ayxp] {
+.navbar-brand[b-agt0qsar21] {
     font-size: 1.1rem;
     width: var(--sidebar-width-mobile);
 }
 
-.bottom-row[b-62pb27ayxp] {
+.bottom-row[b-agt0qsar21] {
     background-color: rgb(19, 20, 29);
     border-radius: 14px;
     margin: 2px;
@@ -28,7 +28,7 @@
     bottom: 0px;
 }
 
-.navbar-buttons-container[b-62pb27ayxp] {
+.navbar-buttons-container[b-agt0qsar21] {
     padding: 4px;
 
 
@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.navbar-button[b-62pb27ayxp] {
+.navbar-button[b-agt0qsar21] {
     color: white;
     background-color: rgb(19, 20, 29);
     border: 0px solid black;
@@ -50,7 +50,7 @@
     align-items: center;
 }
 
-    .navbar-button[b-62pb27ayxp]  a {
+    .navbar-button[b-agt0qsar21]  a {
         /* ^^^vvv This targets the .a in the NavLink component from the NavLink's parent element. */
         color: white;
         background-color: rgba(0,0,0,0.0); /* Transparent .a makes .navbar-button visible */
@@ -61,14 +61,14 @@
         align-items: center;
     }
 
-.oi[b-62pb27ayxp] {
+.oi[b-agt0qsar21] {
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
     top: -1px;
 }
 
-.navlink[b-62pb27ayxp] {
+.navlink[b-agt0qsar21] {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 
@@ -77,13 +77,13 @@
     flex: 1;
 }
 
-.nav-item[b-62pb27ayxp] {
+.nav-item[b-agt0qsar21] {
     font-size: 0.9rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
 }
 
-    .nav-item[b-62pb27ayxp]  a {
+    .nav-item[b-agt0qsar21]  a {
         color: #d7d7d7;
         border-radius: 12px;
         height: 3rem;
@@ -92,21 +92,21 @@
         line-height: 3rem;
     }
 
-    .nav-item[b-62pb27ayxp]  a.active {
+    .nav-item[b-agt0qsar21]  a.active {
         background-color: rgba(255,255,255,0.25);
         color: white;
     }
 
-    .nav-item[b-62pb27ayxp]  a:hover {
+    .nav-item[b-agt0qsar21]  a:hover {
         background-color: rgba(255,255,255,0.1);
         color: white;
     }
 
-.nav-item[b-62pb27ayxp]  i {
+.nav-item[b-agt0qsar21]  i {
     background-color: white;
 }
 
-.navcontainer-custom[b-62pb27ayxp] {
+.navcontainer-custom[b-agt0qsar21] {
     height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
@@ -116,23 +116,23 @@
     bottom: var(--footer-height);
 }
 
-.panel-position-b[b-62pb27ayxp] {
+.panel-position-b[b-agt0qsar21] {
     left: calc(calc(100vw - 12px) / 5);
 }
 
-.panel-position-c[b-62pb27ayxp] {
+.panel-position-c[b-agt0qsar21] {
     left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
 }
 
-.panel-position-d[b-62pb27ayxp] {
+.panel-position-d[b-agt0qsar21] {
     right: calc(calc(100vw - 12px) / 5);
 }
 
-.panel-position-e[b-62pb27ayxp] {
+.panel-position-e[b-agt0qsar21] {
     right: 0px;
 }
 
-.behind-panel[b-62pb27ayxp] {
+.behind-panel[b-agt0qsar21] {
     height: calc(var(--top-bar-height) + var(--content-height));
 
     position: fixed;
@@ -141,13 +141,13 @@
     left: 0px;
 }
 
-.panel[b-62pb27ayxp] {
+.panel[b-agt0qsar21] {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding: 0.7rem 0px;
 }
 
-.panel-header[b-62pb27ayxp] {
+.panel-header[b-agt0qsar21] {
     background-color: rgba(255,255,255,0.25);
     border-radius: 12px;
     color: white;
@@ -158,7 +158,7 @@
     left: 0px;
 }
 
-.panel-scrollablesection[b-62pb27ayxp] {
+.panel-scrollablesection[b-agt0qsar21] {
     overflow-y: auto;
     height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
     margin: 0.5rem 0px;
@@ -167,19 +167,19 @@
 
 /* start Plugable statuses */
 
-.NavButtonStatusOnPanel[b-62pb27ayxp] {
+.NavButtonStatusOnPanel[b-agt0qsar21] {
     background-color: rgba(255,255,255,0.25);
 }
 
-.NavButtonStatusOnPage[b-62pb27ayxp] {
+.NavButtonStatusOnPage[b-agt0qsar21] {
     background-color: rgba(255,255,255,0.18);
 }
 
-.NavButtonStatusOnDeepPage[b-62pb27ayxp] {
+.NavButtonStatusOnDeepPage[b-agt0qsar21] {
     background-color: rgba(255,255,255,0.1);
 }
 
-.NavPanelStatusOnPanel[b-62pb27ayxp] {
+.NavPanelStatusOnPanel[b-agt0qsar21] {
     display: block;
     position: fixed;
 }
@@ -192,28 +192,28 @@
 
     /* start Desktop view */
 
-    .navbar-brand[b-62pb27ayxp] {
+    .navbar-brand[b-agt0qsar21] {
         width: auto;
     }
 
-    .navbar-toggler[b-62pb27ayxp] {
+    .navbar-toggler[b-agt0qsar21] {
         display: none;
     }
 
-    .collapse[b-62pb27ayxp] {
+    .collapse[b-agt0qsar21] {
         display: block;
     }
 
-    .navcontainer-custom[b-62pb27ayxp] {
+    .navcontainer-custom[b-agt0qsar21] {
         height: var(--content-height);
         width: auto;
     }
 
-    .navmenu-negative[b-62pb27ayxp] {
+    .navmenu-negative[b-agt0qsar21] {
         display: none;
     }
 
-    .footer[b-62pb27ayxp] {
+    .footer[b-agt0qsar21] {
         z-index: 3;
     }
 

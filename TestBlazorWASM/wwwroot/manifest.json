@@ -1,6 +1,6 @@
 {
-  "name": "TestBlazorWASM",
-  "short_name": "TestBlazorWASM",
+  "name": "MobileNavBlazorWasmTemplate",
+  "short_name": "MobileNavBlazorWasmTemplate",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

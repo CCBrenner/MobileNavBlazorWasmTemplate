@@ -1,18 +1,18 @@
-.no-margin[b-x4jex87nq9] {
+.no-margin[b-2zr5es01oq] {
     margin: 0px;
 }
-.count[b-x4jex87nq9] {
+.count[b-2zr5es01oq] {
     font-size: 2rem;
 }
-.size-shape-btn-color[b-x4jex87nq9] {
+.size-shape-btn-color[b-2zr5es01oq] {
     background-color: orange;
 }
-.cube-container[b-x4jex87nq9] {
+.cube-container[b-2zr5es01oq] {
     background-color: lightgrey;
     border-radius: 8px;
     padding: 4px;
 }
-.posicube-container[b-x4jex87nq9] {
+.posicube-container[b-2zr5es01oq] {
     align-self: end;
 
     display: flex;
@@ -20,29 +20,29 @@
     justify-content: center;
     align-content: end;
 }
-.negacube-container[b-x4jex87nq9] {
+.negacube-container[b-2zr5es01oq] {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: start;
 }
-.cube[b-x4jex87nq9] {
+.cube[b-2zr5es01oq] {
     margin: 1px;
     display: inline-block;
 }
-.posicube[b-x4jex87nq9] {
+.posicube[b-2zr5es01oq] {
     background-color: green;
 }
-.negacube[b-x4jex87nq9] {
+.negacube[b-2zr5es01oq] {
     background-color: darkred;
 }
 
 /* controlled via razor class (C# adds and removes classes to element) */
-.cube-circle[b-x4jex87nq9] {
+.cube-circle[b-2zr5es01oq] {
     border-radius: 50%;
 }
 
-.cube-diamond[b-x4jex87nq9] {
+.cube-diamond[b-2zr5es01oq] {
     transform: rotate(45deg);  /* turns element 45deg */
     margin: 3px;  /* visually rotated leave corners overlapping (same spacing as before), so increase space around each */
 }

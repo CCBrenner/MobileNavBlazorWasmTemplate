@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HOdv9/OSZgKY4MUllvyfoVciPGUCfONNKBaVFtwEfJcMaAtABlN98gu2j5/jFDUTpGOBqjRP3gsb3W/WH2VLaA==",
+  "dgSpecHash": "wS0o0W248RrVgJNIGCLjWumhkgpVG2ZR8DwERpIO2/QFcOCeVvs5Lj1JuVDs+N9SoX7fENQzqVHJfKOWtzXO3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\TestBlazorWASM.csproj",
+  "projectFilePath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\MobileNavBlazorWasmTemplate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Collyn B - VotP\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.5\\microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512",
     "C:\\Users\\Collyn B - VotP\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.5\\microsoft.aspnetcore.components.6.0.5.nupkg.sha512",

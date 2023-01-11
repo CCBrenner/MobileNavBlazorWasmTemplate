@@ -1767,9 +1767,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\TestBlazorWASM.csproj",
-      "projectName": "TestBlazorWASM",
-      "projectPath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\TestBlazorWASM.csproj",
+      "projectUniqueName": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\MobileNavBlazorWasmTemplate.csproj",
+      "projectName": "MobileNavBlazorWasmTemplate",
+      "projectPath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\MobileNavBlazorWasmTemplate.csproj",
       "packagesPath": "C:\\Users\\Collyn B - VotP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\TestBlazorWASM\\obj\\",
       "projectStyle": "PackageReference",

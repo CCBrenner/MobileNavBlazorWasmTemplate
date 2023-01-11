@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System.Drawing;
-using TestBlazorWASM.Services;
-using TestBlazorWASM.Services.Contracts;
+using MobileNavBlazorWasmTemplate.Services;
+using MobileNavBlazorWasmTemplate.Services.Contracts;
 
-namespace TestBlazorWASM.Pages
+namespace MobileNavBlazorWasmTemplate.Pages
 {
     public partial class Counter
     {

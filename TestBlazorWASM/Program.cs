@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using TestBlazorWASM;
-using TestBlazorWASM.Services;
-using TestBlazorWASM.Services.Contracts;
+using MobileNavBlazorWasmTemplate;
+using MobileNavBlazorWasmTemplate.Services;
+using MobileNavBlazorWasmTemplate.Services.Contracts;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");

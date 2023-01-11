@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "TestBlazorWASM": {
+    "MobileNavBlazorWasmTemplate": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

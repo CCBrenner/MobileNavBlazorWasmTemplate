@@ -1,4 +1,4 @@
-﻿namespace TestBlazorWASM.Services.Contracts
+﻿namespace MobileNavBlazorWasmTemplate.Services.Contracts
 {
     public interface ILayoutService
     {
