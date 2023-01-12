@@ -1,0 +1,59 @@
+.navcontainer-custom[b-szva2dp204] {
+    max-height: var(--mobile-menu-height);
+    width: 70vw;
+    padding: 4px;
+    z-index: 1;
+    display: none;
+    bottom: var(--footer-height);
+}
+
+.panel[b-szva2dp204] {
+    border-radius: 12px;
+    background-color: rgb(19, 20, 29);
+    padding: 0.6rem 0px;
+}
+
+.panel-position-b[b-szva2dp204] {
+    left: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-c[b-szva2dp204] {
+    left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
+}
+
+.panel-position-d[b-szva2dp204] {
+    right: calc(calc(100vw - 12px) / 5);
+}
+
+.panel-position-e[b-szva2dp204] {
+    right: 0px;
+}
+
+/* start Plugable statuses */
+
+.NavButtonStatusOnPanel[b-szva2dp204] {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.NavButtonStatusOnPage[b-szva2dp204] {
+    background-color: rgba(255,255,255,0.18);
+}
+
+.NavButtonStatusOnDeepPage[b-szva2dp204] {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.NavPanelStatusOnPanel[b-szva2dp204] {
+    display: block;
+    position: fixed;
+}
+
+/* end Plugable statuses */
+
+@media (min-width: 641px) {
+
+    .navcontainer-custom[b-szva2dp204] {
+        height: var(--content-height);
+        width: auto;
+    }
+}

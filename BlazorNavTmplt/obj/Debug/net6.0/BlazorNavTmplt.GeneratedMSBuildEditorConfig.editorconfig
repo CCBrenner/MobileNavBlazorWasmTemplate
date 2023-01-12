@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorNavTmplt
+build_property.RootNamespace = BlazorNavTmplt
+build_property.ProjectDir = C:\Users\Collyn B - VotP\source\repos\MobileNavBlazorWasmTemplate\BlazorNavTmplt\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Collyn B - VotP\source\repos\MobileNavBlazorWasmTemplate\BlazorNavTmplt
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/MultiPageData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVsdGlQYWdlRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/TestPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/TestPageChild.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2VDaGlsZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/TestVertScroll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFZlcnRTY3JvbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-avgayfhj3a
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Pages/LoadingSpinners.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9hZGluZ1NwaW5uZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-r0qe8b9x7g
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/BTNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJUTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dl8nkf9rip
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/CollapsingSection.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbGxhcHNpbmdTZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-p4qwvi34pd
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1l7w3tgamb
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavButtonsContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdkJ1dHRvbnNDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-eyn8zozzm9
+
+[C:/Users/Collyn B - VotP/source/repos/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavPanelContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdlBhbmVsQ29udGFpbmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-szva2dp204

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32414.318
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileNavBlazorWasmTemplate", "TestBlazorWASM\MobileNavBlazorWasmTemplate.csproj", "{3A852437-004E-4328-BD1E-139A2775FF4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorNavTmplt", "BlazorNavTmplt\BlazorNavTmplt.csproj", "{EDCF244A-E8CA-498D-A5B2-EB6725ABDD4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A852437-004E-4328-BD1E-139A2775FF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A852437-004E-4328-BD1E-139A2775FF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A852437-004E-4328-BD1E-139A2775FF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A852437-004E-4328-BD1E-139A2775FF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCF244A-E8CA-498D-A5B2-EB6725ABDD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCF244A-E8CA-498D-A5B2-EB6725ABDD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCF244A-E8CA-498D-A5B2-EB6725ABDD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCF244A-E8CA-498D-A5B2-EB6725ABDD4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F5D36736-BFB0-480B-9C45-3198C814C643}
+		SolutionGuid = {27851D8D-5A03-4A4A-8255-134E35C19038}
 	EndGlobalSection
 EndGlobal

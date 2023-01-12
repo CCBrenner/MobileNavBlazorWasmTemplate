@@ -1,0 +1,41 @@
+.icons[b-p4qwvi34pd] {
+    width: 1.8rem;
+    height: 1.2rem;
+}
+
+.navlink[b-p4qwvi34pd] {
+    border-left: 4px solid lightgrey;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    display: flex;
+    flex: 1;
+}
+
+.nav-item[b-p4qwvi34pd] {
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+    .nav-item[b-p4qwvi34pd]  a {
+        color: #d7d7d7;
+        border-radius: 12px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item[b-p4qwvi34pd]  a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        .nav-item[b-p4qwvi34pd]  a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+    .nav-item[b-p4qwvi34pd]  i {
+        color: white;
+    }

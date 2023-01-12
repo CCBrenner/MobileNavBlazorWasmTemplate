@@ -1,0 +1,17 @@
+
+.bottom-row[b-eyn8zozzm9] {
+    background-color: rgb(19, 20, 29);
+    border-radius: 14px;
+    margin: 2px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar-buttons-container[b-eyn8zozzm9] {
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
