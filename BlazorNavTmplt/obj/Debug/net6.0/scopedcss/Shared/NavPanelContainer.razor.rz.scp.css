@@ -2,8 +2,11 @@
     max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
-    z-index: 1;
+    z-index: 10;
     display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
     bottom: var(--footer-height);
 }
 

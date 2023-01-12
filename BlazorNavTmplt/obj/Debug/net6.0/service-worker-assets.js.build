@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -49,10 +49,6 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-bwoej0pBWvwI\/KB\/JTz21W2vMYKfgPg\/l61Y9F9Xboo=",
-      "url": "fall-leaves-as-icon.png"
-    },
-    {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "url": "favicon.ico"
     },
@@ -65,11 +61,11 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-UK9DJFD9jMw\/qL7zwZx1RPIXcjJBy8CXBiSAsDQBxdY=",
+      "hash": "sha256-hQx4r3d2hRuU+InUfCX6wzg3zXC280nZvJtfeM6Sa6Y=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-BDojtY8Y\/p2aWb466LFT\/oKudSLAB8yT3A\/R7cAF6QQ=",
+      "hash": "sha256-jOA2OsqbiiqGzxbciluclAf\/\/H5NiznpMDDLUVx34ko=",
       "url": "manifest.json"
     },
     {
@@ -77,7 +73,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-BBV4RNP0+Nl62897O59GrkTo3B5DrUfHtN3ppF4VCIE=",
+      "hash": "sha256-71mKFGCTXcgCcD62SKOJdb0bOGNXefeCOVszYG\/iAPY=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -837,7 +833,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",
+      "hash": "sha256-FX20dkt3pkTZVBaZAzhxLMymbikXENxpwTpSErweKCs=",
       "url": "_framework\/dotnet.6.0.12.vcefaxtcla.js"
     },
     {
@@ -865,11 +861,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-6EWDutuu1SwjiyIVwjpObV3sCmY+iTJTtAVpU9I6X8M=",
+      "hash": "sha256-Fz14hJnODSQnsoSBF4FwdxEWc2CPnqt0lG\/C8uX5ZoA=",
       "url": "_framework\/BlazorNavTmplt.dll"
     },
     {
-      "hash": "sha256-g4ijv\/JYWJzgoaQq8O6OWlPdRpfypNnPrYzZ\/zR7mlo=",
+      "hash": "sha256-47fnRDNIJNZyLXIbXM24wPsCKe35HTKiXHpwFsCrbMU=",
       "url": "_framework\/BlazorNavTmplt.pdb"
     },
     {
@@ -877,9 +873,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-HX4VlO\/NcKxKrcOYtvvgvwhP3AhTYYzlCvBr3y\/G6uY=",
+      "hash": "sha256-LH4KzpIHH2NGTPeZnTQIecJfWqsNAeJ8fafG3g+fXH8=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "SMC1al\/a"
+  "version": "HBQrQANq"
 };

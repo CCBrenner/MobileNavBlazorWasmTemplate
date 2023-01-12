@@ -23,6 +23,8 @@
     border: 0px solid black;
     border-radius: 12px;
     height: calc(var(--top-bar-height) - 16px);
+    z-index: 10;
+
     display: flex;
     flex: 1;
     justify-content: center;
@@ -88,17 +90,19 @@
 
 .behind-panel {
     height: calc(var(--top-bar-height) + var(--content-height));
+    z-index: 9;
 
     position: fixed;
-    top: 0px;
-    right: 0px;
     left: 0px;
+    right: 0px;
+    bottom: var(--footer-height);
 }
 
 .panel {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding: 0.7rem 0px;
+    z-index: 10;
 }
 
 .panel-header {
