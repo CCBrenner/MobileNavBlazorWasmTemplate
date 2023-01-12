@@ -48,6 +48,7 @@
 }
 
 .navlink {
+    border-left: 4px solid lightgrey;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 
@@ -82,17 +83,7 @@
     }
 
 .nav-item ::deep i {
-    background-color: white;
-}
-
-.navcontainer-custom {
-    height: var(--mobile-menu-height);
-    width: 70vw;
-    padding: 4px;
-
-    z-index: 1;
-    display: none;
-    bottom: var(--footer-height);
+    color: white;
 }
 
 .behind-panel {
@@ -123,13 +114,17 @@
 
 .panel-scrollablesection {
     overflow-y: auto;
-    height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
+    max-height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
     margin: 0.5rem 0px;
     border-radius: 12px;
 }
 
-/* start Plugable statuses */
+.collapsible-item {
+    margin-left: 35px;
+    border-left: 4px solid grey;
+}
 
+/* start Plugable statuses */
 .NavButtonStatusOnPanel {
     background-color: rgba(255,255,255,0.25);
 }
@@ -165,11 +160,6 @@
 
     .collapse {
         display: block;
-    }
-
-    .navcontainer-custom {
-        height: var(--content-height);
-        width: auto;
     }
 
     .navmenu-negative {

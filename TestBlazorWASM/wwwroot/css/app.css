@@ -9,7 +9,7 @@
     --content-height: calc(100vh - calc(var(--top-bar-height) + var(--footer-height)));  /* middle */
 
     --sidebar-width-mobile: 100vw;
-    --mobile-menu-height: calc(65vh - var(--top-bar-height)); /* In vh measurement only. */
+    --mobile-menu-height: calc(calc(65vh - var(--top-bar-height)) - 10px); /* In vh measurement only. */
 
     --sidebar-width-desktop: 220px;
     /* start Layout positioning values */

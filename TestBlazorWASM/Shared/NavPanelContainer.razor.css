@@ -1,5 +1,5 @@
 ﻿.navcontainer-custom {
-    height: var(--mobile-menu-height);
+    max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
     z-index: 1;
@@ -10,7 +10,7 @@
 .panel {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
-    padding: 0.7rem 0px;
+    padding: 0.6rem 0px;
 }
 
 .panel-position-b {

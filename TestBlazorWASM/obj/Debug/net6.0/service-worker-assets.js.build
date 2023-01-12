@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-mAEFNYxilDmGW5GsHGBFEgxP8jCyX09LJ5bAFss\/n5A=",
+      "hash": "sha256-0p1g5lRzbHDHYoO6nuhJNCNQ0CwIUX97Afh4mCZJD4A=",
       "url": "css\/app.css"
     },
     {
@@ -73,7 +73,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-jRmKfFCM+tTREOHDI9wAGuFQZZdMqseehL\/G\/yn0JKU=",
+      "hash": "sha256-RWq6y60DxvSSojZTPMrdU6+NDZlGLDkQAvMKszf1uGs=",
       "url": "MobileNavBlazorWasmTemplate.styles.css"
     },
     {
@@ -861,11 +861,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-D0hEOEqHSUlqkSlEZjBIPdeXINILZf2nfFnYqIAYemo=",
+      "hash": "sha256-KBNC7nA01sGyak9FjxxdDTrXfHSg\/vm6FAWWpP5qImI=",
       "url": "_framework\/MobileNavBlazorWasmTemplate.dll"
     },
     {
-      "hash": "sha256-EzbOoW2mHyzSPoNni+3SLz5K\/IwCMbOQm5dIbXBVixo=",
+      "hash": "sha256-y0kc+RsRQ\/0gfrhcsh9ZAolb8iETDFK5XtuaYPh8KcA=",
       "url": "_framework\/MobileNavBlazorWasmTemplate.pdb"
     },
     {
@@ -873,9 +873,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-YWaZrhoLAQAJ4qXBC\/PfTWQhELmjTB2KHdpaN+lf+Ho=",
+      "hash": "sha256-8j9Ktr9uAvyxe3YR8ilQyNa5+KG4m0AcOWGVAAm7T9A=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "9sIhBxdQ"
+  "version": "sAetlq\/P"
 };
