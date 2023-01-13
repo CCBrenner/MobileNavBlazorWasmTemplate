@@ -4,248 +4,260 @@
 
     <NavButtonsContainer>
         <!-- Could not turn buttons into components due to onclick syntax conflicts (would require restructuring classes) -->
+        <!--
         <div class="navbar-button @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
-            <NavLink class="nav-link" href="testpage">
+            <NavLink class="nav-link">
                 <i class="icon-color fa-solid fa-vials"></i>
             </NavLink>
         </div>
         <div class="navbar-button @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
-            <NavLink class="nav-link" href="loadingspinners">
+            <NavLink class="nav-link">
                 <i class="icon-color fa-solid fa-hand-spock"></i>
             </NavLink>
         </div>
         <div class="navbar-button @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
-            <NavLink class="nav-link" href="">
+            <NavLink class="nav-link">
                 <i class="icon-color fa-solid fa-house"></i>
             </NavLink>
         </div>
         <div class="navbar-button @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
-            <NavLink class="nav-link" href="counter">
+            <NavLink class="nav-link">
                 <i class="icon-color fa-solid fa-plus"></i>
             </NavLink>
         </div>
         <div class="navbar-button @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
-            <NavLink class="nav-link" href="fetchdata">
+            <NavLink class="nav-link">
                 <i class="icon-color fa-solid fa-cloud"></i>
             </NavLink>
+        </div>
+        -->
+        <div class="nav-button-0 @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
+            <span class="button-icon fa-solid fa-vials" aria-hidden="true"></span>
+        </div>
+        <div class="nav-button-0 @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
+            <span class="button-icon fa-solid fa-hand-spock" aria-hidden="true"></span>
+        </div>
+        <div class="nav-button-0 @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
+            <span class="button-icon fa-solid fa-house" aria-hidden="true"></span>
+        </div>
+        <div class="nav-button-0 @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
+            <span class="button-icon fa-solid fa-plus" aria-hidden="true"></span>
+        </div>
+        <div class="nav-button-0 @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
+            <span class="button-icon fa-solid fa-cloud" aria-hidden="true"></span>
         </div>
     </NavButtonsContainer>
 
     <div class="behind-panel" style="display:@BehindPanel" @onclick="UpdateNavFromBehindPanel"></div>
 
     <NavPanelContainer PanelPosition="" NavPanelStatus="@NavPanelAStatus">
-        <div class="nav-item">
-            <div class="panel-header">
-                Test Page
-            </div>
-        </div>
         <div class="panel-scrollablesection">
             <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Not Home
+                    <span class="icon fa-solid fa-house" aria-hidden="true"></span>Hello, world!
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
+        </div>
+        <div class="nav-item panel-header" @onclick="(()=>UpdateNav('A'))">
+            <NavLink class="nav-link" href="testpage">
+                <span class="icon fa-solid fa-vials" aria-hidden="true"></span>Test Page
+            </NavLink>
         </div>
     </NavPanelContainer>
     <NavPanelContainer PanelPosition="panel-position-b" NavPanelStatus="@NavPanelBStatus">
-        <div class="nav-item">
-            <div class="panel-header">
-                Loading Spinners
-            </div>
-        </div>
         <div class="panel-scrollablesection">
             <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
                 <NavLink class="nav-link" href="counter">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
+                    <span class="icon fa-solid fa-plus" aria-hidden="true"></span>Counter
                 </NavLink>
             </div>
-            <CollapsingSection IconClasses="oi oi-home" ParentButtonText="Tappable Section">
+            <CollapsingSection IconClasses="icon fa-solid fa-wand-magic-sparkles" ParentButtonText="Tappable Section">
                 <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('B'))">
                     <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                        <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                     </NavLink>
                 </div>
                 @for (int i = 0; i < 3; i++)
                 {
                     <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('B'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                        <NavLink class="nav-link" href="fetchdata">
+                            <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Fetch data
                         </NavLink>
                     </div>
                 }
             </CollapsingSection>
             <div class="nav-item" @onclick="(()=>UpdateNav('B'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
         </div>
+        <div class="nav-item panel-header" @onclick="(()=>UpdateNav('B'))">
+            <NavLink class="nav-link" href="loadingspinners">
+                <span class="icon fa-solid fa-hand-spock" aria-hidden="true"></span>Loading Spinners
+            </NavLink>
+        </div>
     </NavPanelContainer>
     <NavPanelContainer PanelPosition="panel-position-c" NavPanelStatus="@NavPanelCStatus">
-        <div class="nav-item">
-            <div class="panel-header">
-                Hello, world!
-            </div>
-        </div>
         <div class="panel-scrollablesection">
             <!-- Could not turn panel items into components due to onclick syntax conflicts (would require restructuring classes) -->
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
-            <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
-                <NavLink class="nav-link" href="counter">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
+            <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                <NavLink class="nav-link" href="#">
+                    <span class="icon fa-solid fa-house" aria-hidden="true"></span>Hello, world!
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="fetchdata">
-                    <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
+                    <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Fetch data
                 </NavLink>
             </div>
-            <CollapsingSection IconClasses="fa fa-star" ParentButtonText="Tappable Section">
+            <CollapsingSection IconClasses="icon fa fa-star" ParentButtonText="Tappable Section">
                 <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('C'))">
                     <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                        <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                     </NavLink>
                 </div>
                 @for (int i = 0; i < 8; i++)
                 {
                     <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('C'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                        <NavLink class="nav-link" href="loadingspinners">
+                            <span class="icon fa-solid fa-hand-spock" aria-hidden="true"></span>Loading Spinners
                         </NavLink>
                     </div>
                 }
             </CollapsingSection>
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="loadingspinners">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Loading Spinners
+                    <span class="icon fa-solid fa-hand-spock" aria-hidden="true"></span>Loading Spinners
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="multipagedata">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                 </NavLink>
             </div>
-            <CollapsingSection IconClasses="fa fa-trash" ParentButtonText="Tappable Section">
+            <CollapsingSection IconClasses="icon fa fa-trash" ParentButtonText="Other Tappable Section">
                 <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('C'))">
                     <NavLink class="nav-link" href="multipagedata">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
+                        <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                     </NavLink>
                 </div>
                 @for (int i = 0; i < 2; i++)
                 {
                     <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('C'))">
-                        <NavLink class="nav-link" href="#">
-                            <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                        <NavLink class="nav-link" href="loadingspinners">
+                            <span class="icon fa-solid fa-hand-spock" aria-hidden="true"></span>Loading Spinners
                         </NavLink>
                     </div>
                 }
             </CollapsingSection>
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="testpage">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Test Page
+                    <span class="icon fa-solid fa-vials" aria-hidden="true"></span>Test Page
                 </NavLink>
             </div>
             @for (int i = 0; i < 11; i++)
             {
                 <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                     <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                        <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Blank Item (H)
                     </NavLink>
                 </div>
             }
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
         </div>
+        <div class="nav-item panel-header" @onclick="(()=>UpdateNav('C'))">
+            <NavLink class="nav-link" href="#">
+                <span class="icon fa-solid fa-house" aria-hidden="true"></span>Hello, world!
+            </NavLink>
+        </div>
     </NavPanelContainer>
     <NavPanelContainer PanelPosition="panel-position-d" NavPanelStatus="@NavPanelDStatus">
-        <div class="nav-item">
-            <div class="panel-header">
-                Counter
-            </div>
-        </div>
         <div class="panel-scrollablesection">
             <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
                 <NavLink class="nav-link" href="multipagedata">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Multi-Page Data
-                </NavLink>
-            </div>
-            <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                <NavLink class="nav-link" href="counter">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Counter
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                 </NavLink>
             </div>
             @for (int i = 0; i < 12; i++)
             {
                 <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Almost Home
+                    <NavLink class="nav-link" href="loadingspinners">
+                        <span class="icon fa-solid fa-hand-spock" aria-hidden="true"></span>Loading Spinners
                     </NavLink>
                 </div>
             }
             <div class="nav-item" @onclick="(()=>UpdateNav('D'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Last Almost Home
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
+        </div>
+        <div class="nav-item panel-header" @onclick="(()=>UpdateNav('D'))">
+            <NavLink class="nav-link" href="counter">
+                <span class="icon fa-solid fa-plus" aria-hidden="true"></span>Counter
+            </NavLink>
         </div>
     </NavPanelContainer>
     <NavPanelContainer PanelPosition="panel-position-e" NavPanelStatus="@NavPanelEStatus">
-        <div class="nav-item">
-            <div class="panel-header">
-                Weather Forcast
-            </div>
-        </div>
         <div class="panel-scrollablesection">
             <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>First Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                 </NavLink>
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
-                <NavLink class="nav-link" href="fetchdata">
-                    <span class="oi oi-list-rich" aria-hidden="true"></span>Fetch data
+                <NavLink class="nav-link" href="multipagedata">
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Multi-Page Data
                 </NavLink>
             </div>
             @for (int i = 0; i < 20; i++)
             {
                 <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
-                    <NavLink class="nav-link" href="#">
-                        <span class="oi oi-plus" aria-hidden="true"></span>Blank Item (H)
+                    <NavLink class="nav-link" href="counter">
+                        <span class="icon fa-solid fa-plus" aria-hidden="true"></span>Counter
                     </NavLink>
                 </div>
             }
             <div class="nav-item" @onclick="(()=>UpdateNav('E'))">
                 <NavLink class="nav-link" href="#">
-                    <span class="oi oi-plus" aria-hidden="true"></span>Last Item (H)
+                    <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>Last Item (H)
                 </NavLink>
             </div>
+        </div>
+        <div class="nav-item panel-header" @onclick="(()=>UpdateNav('E'))">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Weather Forecast
+            </NavLink>
         </div>
     </NavPanelContainer>
 </div>

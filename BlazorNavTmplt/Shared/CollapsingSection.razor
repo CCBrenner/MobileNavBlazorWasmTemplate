@@ -1,9 +1,11 @@
 ﻿
-<div class="nav-item" @onclick="ToggleSection">
-    <NavLink class="nav-link">
-        <span class="@IconClasses icons" aria-hidden="true"></span>@ParentButtonText &nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-left" style="display: @ChevronLeftDisplay" /><i class="fa fa-chevron-down" style="display: @ChevronDownDisplay" />
-    </NavLink>
+<div class="collapsible-section-header" @onclick="ToggleSection">
+    <span class="@IconClasses" aria-hidden="true"></span>
+    @ParentButtonText&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-chevron-left" style="display: @ChevronLeftDisplay" />
+    <i class="fa fa-chevron-down" style="display: @ChevronDownDisplay" />
 </div>
+
 <div style="display: @SectionDisplay">
     @ChildContent
 </div>

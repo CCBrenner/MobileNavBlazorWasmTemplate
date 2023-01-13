@@ -13,7 +13,7 @@
 .panel {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
-    padding: 0.6rem 0px;
+    padding-top: 0.6rem;
 }
 
 .panel-position-b {
@@ -25,10 +25,12 @@
 }
 
 .panel-position-d {
+    left: auto;
     right: calc(calc(100vw - 12px) / 5);
 }
 
 .panel-position-e {
+    left: auto;
     right: 0px;
 }
 
