@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FEW4tIUIOi1UGaq2flzEgqG1Wts94pjkxAk94rxBBC8=",
+  "Hash": "E/zpZzPuCg7+rWAl0HrSYbk9SKNaJ5vwxhez25q5X4o=",
   "Source": "BlazorNavTmplt",
   "BasePath": "/",
   "Mode": "Root",
@@ -2293,23 +2293,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
-    },
-    {
-      "Identity": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\fall-leaves-as-icon.png",
-      "SourceId": "BlazorNavTmplt",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "fall-leaves-as-icon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fall-leaves-as-icon.png"
     },
     {
       "Identity": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\favicon.ico",

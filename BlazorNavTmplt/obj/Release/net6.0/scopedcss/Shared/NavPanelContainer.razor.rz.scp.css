@@ -2,15 +2,18 @@
     max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
-    z-index: 1;
+    z-index: 10;
     display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
     bottom: var(--footer-height);
 }
 
 .panel[b-szva2dp204] {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
-    padding: 0.6rem 0px;
+    padding-top: 0.6rem;
 }
 
 .panel-position-b[b-szva2dp204] {
@@ -22,10 +25,12 @@
 }
 
 .panel-position-d[b-szva2dp204] {
+    left: auto;
     right: calc(calc(100vw - 12px) / 5);
 }
 
 .panel-position-e[b-szva2dp204] {
+    left: auto;
     right: 0px;
 }
 

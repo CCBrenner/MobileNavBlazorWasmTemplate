@@ -23,9 +23,23 @@
     border: 0px solid black;
     border-radius: 12px;
     height: calc(var(--top-bar-height) - 16px);
+    z-index: 10;
+
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: center;
+}
+.nav-button-0[b-dl8nkf9rip] {
+    color: white;
+    background-color: rgb(19, 20, 29);
+    border: 0px solid black;
+    border-radius: 12px;
+    height: calc(var(--top-bar-height) - 16px);
+    z-index: 10;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;;
     align-items: center;
 }
 
@@ -40,7 +54,8 @@
         align-items: center;
     }
 
-.oi[b-dl8nkf9rip] {
+.icon[b-dl8nkf9rip] {
+    color: white;
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
@@ -49,8 +64,8 @@
 
 .navlink[b-dl8nkf9rip] {
     border-left: 4px solid lightgrey;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: 16px;
+    padding-right: 16px;
 
 
     display: flex;
@@ -59,8 +74,6 @@
 
 .nav-item[b-dl8nkf9rip] {
     font-size: 0.9rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
 }
 
     .nav-item[b-dl8nkf9rip]  a {
@@ -75,6 +88,7 @@
     .nav-item[b-dl8nkf9rip]  a.active {
         background-color: rgba(255,255,255,0.25);
         color: white;
+        border: 1px solid black;
     }
 
     .nav-item[b-dl8nkf9rip]  a:hover {
@@ -88,39 +102,42 @@
 
 .behind-panel[b-dl8nkf9rip] {
     height: calc(var(--top-bar-height) + var(--content-height));
+    z-index: 9;
 
     position: fixed;
-    top: 0px;
-    right: 0px;
     left: 0px;
-}
-
-.panel[b-dl8nkf9rip] {
-    border-radius: 12px;
-    background-color: rgb(19, 20, 29);
-    padding: 0.7rem 0px;
+    right: 0px;
+    bottom: var(--footer-height);
 }
 
 .panel-header[b-dl8nkf9rip] {
     background-color: rgba(255,255,255,0.25);
-    border-radius: 12px;
     color: white;
-    padding: 4px 0px;
-
-    position: sticky;
-    top: 0px;
-    left: 0px;
+    border-radius: 12px;
+    border: 2px solid black;
 }
+    .panel-header[b-dl8nkf9rip]  a {
+        color: white;
+    }
+
+    .panel-header[b-dl8nkf9rip]  a.active {
+        background-color: rgba(255,255,255,0.0);
+    }
+
+    .panel-header[b-dl8nkf9rip]  a:hover {
+        background-color: rgba(255,255,255,0.0);
+    }
 
 .panel-scrollablesection[b-dl8nkf9rip] {
     overflow-y: auto;
     max-height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
-    margin: 0.5rem 0px;
     border-radius: 12px;
+    padding: 0px 0.4rem;
 }
 
 .collapsible-item[b-dl8nkf9rip] {
-    margin-left: 35px;
+    margin-left: 28px;
+    padding-left: 0.4rem;
     border-left: 4px solid grey;
 }
 

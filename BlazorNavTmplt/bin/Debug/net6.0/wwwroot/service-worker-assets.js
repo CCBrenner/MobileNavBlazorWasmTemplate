@@ -53,27 +53,31 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
-      "url": "icon-192.png"
-    },
-    {
-      "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
-      "url": "icon-512.png"
-    },
-    {
-      "hash": "sha256-hQx4r3d2hRuU+InUfCX6wzg3zXC280nZvJtfeM6Sa6Y=",
+      "hash": "sha256-xvwKltDReI1Krvoi7nOtt0yR3Ky2Q6gly74V92o0anU=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-jOA2OsqbiiqGzxbciluclAf\/\/H5NiznpMDDLUVx34ko=",
+      "hash": "sha256-WB5UFDTwptsggZg4aNJDDyBtNHFq6QY+XUrh1h7avC0=",
       "url": "manifest.json"
+    },
+    {
+      "hash": "sha256-iuIDcV7R85jv3XEhsdk3sD96JC1bzha\/WwZPXnMzcYU=",
+      "url": "media\/images\/frame.png"
+    },
+    {
+      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
+      "url": "media\/images\/icon-192.png"
+    },
+    {
+      "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
+      "url": "media\/images\/icon-512.png"
     },
     {
       "hash": "sha256-yzFf+O\/mlH+Q9klUSqXP2kxGKOUFLPxaww8da8fKhGU=",
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-KyRJTaQCAX\/liOAXmYowpiF4cXASA7vmQFk+dPaetUI=",
+      "hash": "sha256-gzX9OOtLnXAtUh9mY2lAEHxIbnA1TJ5GbIjfYmALtIo=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -861,11 +865,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-1H36CkYsImNdau75+SJ18y5Rg1wRKz93cv5YXZJ3\/ek=",
+      "hash": "sha256-mFtPMFe4pgqqsUaxCLCbmugJK\/lJ5rnsdz1bMb73Z0o=",
       "url": "_framework\/BlazorNavTmplt.dll"
     },
     {
-      "hash": "sha256-E3mhQ3FLEYHaMLcnD1R7k4+5m38jFjFsUn5+dsnEiEI=",
+      "hash": "sha256-5tRl21msSGiClrVt1rLo9Y1Gs7v2zCIEPPKN\/S9kFZY=",
       "url": "_framework\/BlazorNavTmplt.pdb"
     },
     {
@@ -873,9 +877,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-zvod9JjgY2FXyCsW3ckVlSYCL4EgGU1lN0FPSlA8d8g=",
+      "hash": "sha256-LWTDeiT2J9sVJZFspqGXgZGy7WyjHXo+y2VZ9ZRRpxs=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "xWSncbUn"
+  "version": "6DUElYJA"
 };

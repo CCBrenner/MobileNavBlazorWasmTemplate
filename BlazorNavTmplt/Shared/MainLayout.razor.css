@@ -7,7 +7,23 @@
     flex-direction: column;
 }
 
-.
+.larger-than-mobile {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+
+    display: none;
+}
+
+.larger-than-mobile-image {
+    width: 18vw;
+    height: auto;
+    border-radius: 35px;
+}
 
 main {
     flex: 1;
@@ -90,6 +106,12 @@ main {
 
     .page {
         flex-direction: row;
+    }
+
+    .larger-than-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .sidebar {

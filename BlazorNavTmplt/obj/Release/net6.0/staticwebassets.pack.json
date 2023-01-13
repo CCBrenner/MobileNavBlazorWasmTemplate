@@ -69,10 +69,6 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\fall-leaves-as-icon.png",
-      "PackagePath": "staticwebassets\\fall-leaves-as-icon.png"
-    },
-    {
       "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-s217a16Tvev\/tB6PW7Q9pH15NfRhUDKGpKN22X2V7+s=",
+      "hash": "sha256-oyk06SeJHwg6yxsKKgFUlVtUXTLGinUBQuHwpvnG4iw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-y8RLUviE3sRFzTNtC8KaT4DNwl\/G1U3z\/6vnxxEhWQY=",
+      "hash": "sha256-ukO35wUTgHckYhcAUUKvNYhMjIAd2jW47QOYgbhJQqM=",
       "url": "_framework\/BlazorNavTmplt.dll"
     },
     {
@@ -157,7 +157,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-BBV4RNP0+Nl62897O59GrkTo3B5DrUfHtN3ppF4VCIE=",
+      "hash": "sha256-lrYxacc4ZFjmYB1qANyX2wigQfT6pFeoDhjt7uY8utY=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -209,10 +209,6 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-bwoej0pBWvwI\/KB\/JTz21W2vMYKfgPg\/l61Y9F9Xboo=",
-      "url": "fall-leaves-as-icon.png"
-    },
-    {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "url": "favicon.ico"
     },
@@ -225,11 +221,11 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-UK9DJFD9jMw\/qL7zwZx1RPIXcjJBy8CXBiSAsDQBxdY=",
+      "hash": "sha256-hQx4r3d2hRuU+InUfCX6wzg3zXC280nZvJtfeM6Sa6Y=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-BDojtY8Y\/p2aWb466LFT\/oKudSLAB8yT3A\/R7cAF6QQ=",
+      "hash": "sha256-jOA2OsqbiiqGzxbciluclAf\/\/H5NiznpMDDLUVx34ko=",
       "url": "manifest.json"
     },
     {
@@ -237,5 +233,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "YSZG8bDF"
+  "version": "6GwqanPq"
 };
