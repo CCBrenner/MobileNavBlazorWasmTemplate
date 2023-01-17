@@ -1,6 +1,6 @@
 ﻿.collapsible-section-header {
     z-index: 10;
-    color: #D7D7D7;
+    color: white;
     height: 3rem;
     padding-left: 16px;
     padding-right: 0.25rem;
@@ -44,6 +44,12 @@
     .nav-item ::deep i {
         color: #D7D7D7;
     }
+
+.chevron-container {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
 
 .icon {
     width: 1.8rem;

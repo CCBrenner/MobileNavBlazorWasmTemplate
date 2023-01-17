@@ -7,7 +7,28 @@
     flex-direction: column;
 }
 
-.
+.larger-than-mobile[b-1l7w3tgamb] {
+    background-color: #eee;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.ltm-section[b-1l7w3tgamb] {
+    padding: 8px;
+}
+
+.larger-than-mobile-image[b-1l7w3tgamb] {
+    width: auto;
+    height: 50vh;
+    border-radius: 35px;
+    padding: 20px;
+}
 
 main[b-1l7w3tgamb] {
     flex: 1;
@@ -90,6 +111,12 @@ main[b-1l7w3tgamb] {
 
     .page[b-1l7w3tgamb] {
         flex-direction: row;
+    }
+
+    .larger-than-mobile[b-1l7w3tgamb] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .sidebar[b-1l7w3tgamb] {

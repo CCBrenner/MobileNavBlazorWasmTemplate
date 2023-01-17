@@ -1,4 +1,4 @@
-﻿.navcontainer-custom {
+﻿.panel-container {
     max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
@@ -14,6 +14,7 @@
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding-top: 0.6rem;
+    z-index: 10;
 }
 
 .panel-position-b {
@@ -36,19 +37,11 @@
 
 /* start Plugable statuses */
 
-.NavButtonStatusOnPanel {
+.button-on-highlight-button {
     background-color: rgba(255,255,255,0.25);
 }
 
-.NavButtonStatusOnPage {
-    background-color: rgba(255,255,255,0.18);
-}
-
-.NavButtonStatusOnDeepPage {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.NavPanelStatusOnPanel {
+.button-on-show-panel {
     display: block;
     position: fixed;
 }

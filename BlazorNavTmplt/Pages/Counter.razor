@@ -40,6 +40,7 @@
 </div>
 <br/>
 <div class="cube-container my-2">
+    <!-- Both of these are good candidates for component virtualization (render elements that are visible from the viewport first) -->
     <div class="posicube-container">
         @for (int i = 0; i < @CounterService.Count; i++)
         {

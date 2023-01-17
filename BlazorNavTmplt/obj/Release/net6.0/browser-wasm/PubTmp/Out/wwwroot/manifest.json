@@ -1,6 +1,6 @@
 {
-  "name": "BlazorNavTmplt",
-  "short_name": "BlazorNavTmplt",
+  "name": "BlazorNav Template",
+  "short_name": "BlazorNav Template",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -8,12 +8,12 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "media/images/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "ion-192.png",
+      "src": "media/images/ion-192.png",
       "type": "image/png",
       "sizes": "192x192"
     }

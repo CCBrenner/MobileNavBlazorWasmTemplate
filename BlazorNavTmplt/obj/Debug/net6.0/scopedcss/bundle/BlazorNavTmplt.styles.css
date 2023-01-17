@@ -169,31 +169,7 @@
     z-index: 2;
 }
 
-.top-row[b-dl8nkf9rip] {
-    height: var(--top-bar-height);
-    width: var(--sidebar-width-mobile);
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-dl8nkf9rip] {
-    font-size: 1.1rem;
-    width: var(--sidebar-width-mobile);
-}
-
-.navbar-button[b-dl8nkf9rip] {
-    color: white;
-    background-color: rgb(19, 20, 29);
-    border: 0px solid black;
-    border-radius: 12px;
-    height: calc(var(--top-bar-height) - 16px);
-    z-index: 10;
-
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-.nav-button-0[b-dl8nkf9rip] {
+.nav-button[b-dl8nkf9rip] {
     color: white;
     background-color: rgb(19, 20, 29);
     border: 0px solid black;
@@ -205,17 +181,6 @@
     justify-content: space-around;;
     align-items: center;
 }
-
-    .navbar-button[b-dl8nkf9rip]  a {
-        /* ^^^vvv This targets the .a in the NavLink component from the NavLink's parent element. */
-        color: white;
-        background-color: rgba(0,0,0,0.0); /* Transparent .a makes .navbar-button visible */
-
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-    }
 
 .icon[b-dl8nkf9rip] {
     color: white;
@@ -240,7 +205,7 @@
 }
 
     .nav-item[b-dl8nkf9rip]  a {
-        color: #d7d7d7;
+        color: white;
         border-radius: 12px;
         height: 3rem;
         display: flex;
@@ -305,19 +270,12 @@
 }
 
 /* start Plugable statuses */
-.NavButtonStatusOnPanel[b-dl8nkf9rip] {
+
+.button-on-highlight-button[b-dl8nkf9rip] {
     background-color: rgba(255,255,255,0.25);
 }
 
-.NavButtonStatusOnPage[b-dl8nkf9rip] {
-    background-color: rgba(255,255,255,0.18);
-}
-
-.NavButtonStatusOnDeepPage[b-dl8nkf9rip] {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.NavPanelStatusOnPanel[b-dl8nkf9rip] {
+.button-on-show-panel[b-dl8nkf9rip] {
     display: block;
     position: fixed;
 }
@@ -356,7 +314,7 @@
 /* /Shared/CollapsingSection.razor.rz.scp.css */
 .collapsible-section-header[b-p4qwvi34pd] {
     z-index: 10;
-    color: #D7D7D7;
+    color: white;
     height: 3rem;
     padding-left: 16px;
     padding-right: 0.25rem;
@@ -401,6 +359,12 @@
         color: #D7D7D7;
     }
 
+.chevron-container[b-p4qwvi34pd] {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
 .icon[b-p4qwvi34pd] {
     width: 1.8rem;
     font-size: 0.9rem;
@@ -419,20 +383,76 @@
 
 .larger-than-mobile[b-1l7w3tgamb] {
     background-color: #eee;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 11;
-
     display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.ltm-section[b-1l7w3tgamb] {
+    padding: 8px;
 }
 
 .larger-than-mobile-image[b-1l7w3tgamb] {
-    width: 18vw;
-    height: auto;
+    width: auto;
+    height: 50vh;
     border-radius: 35px;
+    padding: 20px;
+}
+
+.install-promo[b-1l7w3tgamb] {
+    background-color: seagreen;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: calc(var(--footer-height) + 8px);
+    right: 8px;
+}
+
+.install-prompt-background[b-1l7w3tgamb] {
+    background-color: rgba(0,0,0,0.15);
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.install-prompt[b-1l7w3tgamb] {
+    background-color: seagreen;
+    color: white;
+    min-height: 15vh;
+    width: 100vw;
+    padding: 20px;
+    z-index: 21;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: calc(50vh - 10vh);
+}
+
+.install-prompt-message[b-1l7w3tgamb] {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.install-prompt-button[b-1l7w3tgamb] {
+    margin: 0px 4px;
 }
 
 main[b-1l7w3tgamb] {
@@ -577,7 +597,7 @@ main[b-1l7w3tgamb] {
     align-items: center;
 }
 /* /Shared/NavPanelContainer.razor.rz.scp.css */
-.navcontainer-custom[b-szva2dp204] {
+.panel-container[b-szva2dp204] {
     max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
@@ -593,6 +613,7 @@ main[b-1l7w3tgamb] {
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding-top: 0.6rem;
+    z-index: 10;
 }
 
 .panel-position-b[b-szva2dp204] {
@@ -615,19 +636,11 @@ main[b-1l7w3tgamb] {
 
 /* start Plugable statuses */
 
-.NavButtonStatusOnPanel[b-szva2dp204] {
+.button-on-highlight-button[b-szva2dp204] {
     background-color: rgba(255,255,255,0.25);
 }
 
-.NavButtonStatusOnPage[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.18);
-}
-
-.NavButtonStatusOnDeepPage[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.NavPanelStatusOnPanel[b-szva2dp204] {
+.button-on-show-panel[b-szva2dp204] {
     display: block;
     position: fixed;
 }

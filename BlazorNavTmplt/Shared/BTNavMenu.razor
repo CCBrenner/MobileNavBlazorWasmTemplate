@@ -4,46 +4,19 @@
 
     <NavButtonsContainer>
         <!-- Could not turn buttons into components due to onclick syntax conflicts (would require restructuring classes) -->
-        <!--
-        <div class="navbar-button @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
-            <NavLink class="nav-link">
-                <i class="icon-color fa-solid fa-vials"></i>
-            </NavLink>
-        </div>
-        <div class="navbar-button @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
-            <NavLink class="nav-link">
-                <i class="icon-color fa-solid fa-hand-spock"></i>
-            </NavLink>
-        </div>
-        <div class="navbar-button @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
-            <NavLink class="nav-link">
-                <i class="icon-color fa-solid fa-house"></i>
-            </NavLink>
-        </div>
-        <div class="navbar-button @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
-            <NavLink class="nav-link">
-                <i class="icon-color fa-solid fa-plus"></i>
-            </NavLink>
-        </div>
-        <div class="navbar-button @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
-            <NavLink class="nav-link">
-                <i class="icon-color fa-solid fa-cloud"></i>
-            </NavLink>
-        </div>
-        -->
-        <div class="nav-button-0 @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
+        <div class="nav-button @NavButtonAStatus" @onclick="(()=>UpdateNav('A'))">
             <span class="button-icon fa-solid fa-vials" aria-hidden="true"></span>
         </div>
-        <div class="nav-button-0 @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
+        <div class="nav-button @NavButtonBStatus" @onclick="(()=>UpdateNav('B'))">
             <span class="button-icon fa-solid fa-hand-spock" aria-hidden="true"></span>
         </div>
-        <div class="nav-button-0 @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
+        <div class="nav-button @NavButtonCStatus" @onclick="(()=>UpdateNav('C'))">
             <span class="button-icon fa-solid fa-house" aria-hidden="true"></span>
         </div>
-        <div class="nav-button-0 @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
+        <div class="nav-button @NavButtonDStatus" @onclick="(()=>UpdateNav('D'))">
             <span class="button-icon fa-solid fa-plus" aria-hidden="true"></span>
         </div>
-        <div class="nav-button-0 @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
+        <div class="nav-button @NavButtonEStatus" @onclick="(()=>UpdateNav('E'))">
             <span class="button-icon fa-solid fa-cloud" aria-hidden="true"></span>
         </div>
     </NavButtonsContainer>
@@ -96,7 +69,7 @@
                 {
                     <div class="nav-item collapsible-item" @onclick="(()=>UpdateNav('B'))">
                         <NavLink class="nav-link" href="fetchdata">
-                            <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Fetch data
+                            <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Weather Forecast
                         </NavLink>
                     </div>
                 }
@@ -128,7 +101,7 @@
             </div>
             <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                 <NavLink class="nav-link" href="fetchdata">
-                    <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Fetch data
+                    <span class="icon fa-solid fa-cloud" aria-hidden="true"></span>Weather Forecast
                 </NavLink>
             </div>
             <CollapsingSection IconClasses="icon fa fa-star" ParentButtonText="Tappable Section">

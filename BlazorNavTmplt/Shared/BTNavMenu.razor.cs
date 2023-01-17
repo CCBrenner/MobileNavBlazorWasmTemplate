@@ -1,22 +1,21 @@
-﻿namespace BlazorNavTmplt.Shared
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace BlazorNavTmplt.Shared
 {
     public partial class BTNavMenu
     {
-        // Button States: Off, OnPanel, OnPage
-        private string navButtonAState = "Off";
-        private string navButtonBState = "Off";
-        private string navButtonCState = "Off";
-        private string navButtonDState = "Off";
-        private string navButtonEState = "Off";
+        private bool buttonAIsOn = false;
+        private bool buttonBIsOn = false;
+        private bool buttonCIsOn = false;
+        private bool buttonDIsOn = false;
+        private bool buttonEIsOn = false;
 
-        // Button Statuses: "", NavButtonStatusOnPanel, NavButtonStatusOnPage, NavButtonStatusOnDeepPage
         protected string NavButtonAStatus = "";
         protected string NavButtonBStatus = "";
         protected string NavButtonCStatus = "";
         protected string NavButtonDStatus = "";
         protected string NavButtonEStatus = "";
 
-        // Panel Statuses: "", NavPanelStatusOnPanel, ""
         protected string NavPanelAStatus = "";
         protected string NavPanelBStatus = "";
         protected string NavPanelCStatus = "";
@@ -24,100 +23,81 @@
         protected string NavPanelEStatus = "";
 
         // For BehindPanel
-        private string globalNavButtonState = "Off";
+        private bool globalNavButtonState = false;
         protected string BehindPanel = "none";
         private char CurrentButton = 'Z';
 
-        protected void UpdateNavFromBehindPanel() =>
-            UpdateNav(CurrentButton);
         public void UpdateNav(char buttonId)
         {
             CurrentButton = buttonId;
             switch (buttonId)
             {
                 case 'A':
-                    navButtonAState = ReadAndUpdateButtonState(navButtonAState);
-                    globalNavButtonState = navButtonAState;
+                    buttonAIsOn = UpdateButtonState(buttonAIsOn);
+                    globalNavButtonState = buttonAIsOn;
                     break;
                 case 'B':
-                    navButtonBState = ReadAndUpdateButtonState(navButtonBState);
-                    globalNavButtonState = navButtonBState;
+                    buttonBIsOn = UpdateButtonState(buttonBIsOn);
+                    globalNavButtonState = buttonBIsOn;
                     break;
                 case 'C':
-                    navButtonCState = ReadAndUpdateButtonState(navButtonCState);
-                    globalNavButtonState = navButtonCState;
+                    buttonCIsOn = UpdateButtonState(buttonCIsOn);
+                    globalNavButtonState = buttonCIsOn;
                     break;
                 case 'D':
-                    navButtonDState = ReadAndUpdateButtonState(navButtonDState);
-                    globalNavButtonState = navButtonDState;
+                    buttonDIsOn = UpdateButtonState(buttonDIsOn);
+                    globalNavButtonState = buttonDIsOn;
                     break;
                 case 'E':
-                    navButtonEState = ReadAndUpdateButtonState(navButtonEState);
-                    globalNavButtonState = navButtonEState;
+                    buttonEIsOn = UpdateButtonState(buttonEIsOn);
+                    globalNavButtonState = buttonEIsOn;
                     break;
             }
-            UpdateButtonStatuses();
-            UpdatePanelStatuses();
+            UpdateButtons();
+            UpdatePanels();
             UpdateBehindPanel();
         }
-        private string ReadAndUpdateButtonState(string buttonState)
+        private bool UpdateButtonState(bool buttonState)
         {
-            if (buttonState == "Off")
+            if (buttonState)
+                return false;
+            else
             {
-                ResetButtonStates();
-                return "OnPanel";
+                TurnAllButtonsOff();
+                return true;
             }
-            else if (buttonState == "OnPanel")
-                return "OnPage";
-            else
-                return "OnPanel";
         }
-        private void ResetButtonStates()
+        private void TurnAllButtonsOff()
         {
-            navButtonAState = "Off";
-            navButtonBState = "Off";
-            navButtonCState = "Off";
-            navButtonDState = "Off";
-            navButtonEState = "Off";
+            buttonAIsOn = false;
+            buttonBIsOn = false;
+            buttonCIsOn = false;
+            buttonDIsOn = false;
+            buttonEIsOn = false;
         }
-        private void UpdateButtonStatuses()
+        private void UpdateButtons()
         {
-            NavButtonAStatus = UpdateButtonStatus(navButtonAState);
-            NavButtonBStatus = UpdateButtonStatus(navButtonBState);
-            NavButtonCStatus = UpdateButtonStatus(navButtonCState);
-            NavButtonDStatus = UpdateButtonStatus(navButtonDState);
-            NavButtonEStatus = UpdateButtonStatus(navButtonEState);
+            NavButtonAStatus = UpdateButton(buttonAIsOn);
+            NavButtonBStatus = UpdateButton(buttonBIsOn);
+            NavButtonCStatus = UpdateButton(buttonCIsOn);
+            NavButtonDStatus = UpdateButton(buttonDIsOn);
+            NavButtonEStatus = UpdateButton(buttonEIsOn);
         }
-        private string UpdateButtonStatus(string buttonState)
+        private void UpdatePanels()
         {
-            if (buttonState == "Off")
-                return "";
-            else if (buttonState == "OnPanel")
-                return "NavButtonStatusOnPanel";
-            else
-                return "NavButtonStatusOnPage";
+            NavPanelAStatus = UpdatePanel(buttonAIsOn);
+            NavPanelBStatus = UpdatePanel(buttonBIsOn);
+            NavPanelCStatus = UpdatePanel(buttonCIsOn);
+            NavPanelDStatus = UpdatePanel(buttonDIsOn);
+            NavPanelEStatus = UpdatePanel(buttonEIsOn);
         }
-        private void UpdatePanelStatuses()
-        {
-            NavPanelAStatus = UpdatePanelStatus(navButtonAState);
-            NavPanelBStatus = UpdatePanelStatus(navButtonBState);
-            NavPanelCStatus = UpdatePanelStatus(navButtonCState);
-            NavPanelDStatus = UpdatePanelStatus(navButtonDState);
-            NavPanelEStatus = UpdatePanelStatus(navButtonEState);
-        }
-        private string UpdatePanelStatus(string buttonState)
-        {
-            if (buttonState == "OnPanel")
-                return "NavPanelStatusOnPanel";
-            else
-                return "";
-        }
-        private void UpdateBehindPanel()
-        {
-            if (globalNavButtonState == "OnPanel")
-                BehindPanel = "block";
-            else
-                BehindPanel = "none";
-        }
+        private void UpdateBehindPanel() =>
+            BehindPanel = globalNavButtonState ? "block" : "none";
+        protected void UpdateNavFromBehindPanel() =>
+            UpdateNav(CurrentButton);
+        private string UpdateButton(bool buttonState) =>
+            buttonState ? "button-on-highlight-button" : "";
+        private string UpdatePanel(bool buttonState) =>
+            buttonState ? "button-on-show-panel" : "";
     }
 }
