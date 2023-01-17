@@ -1,4 +1,4 @@
-.navcontainer-custom[b-szva2dp204] {
+.panel-container[b-szva2dp204] {
     max-height: var(--mobile-menu-height);
     width: 70vw;
     padding: 4px;
@@ -14,6 +14,7 @@
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding-top: 0.6rem;
+    z-index: 10;
 }
 
 .panel-position-b[b-szva2dp204] {
@@ -36,19 +37,11 @@
 
 /* start Plugable statuses */
 
-.NavButtonStatusOnPanel[b-szva2dp204] {
+.button-on-highlight-button[b-szva2dp204] {
     background-color: rgba(255,255,255,0.25);
 }
 
-.NavButtonStatusOnPage[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.18);
-}
-
-.NavButtonStatusOnDeepPage[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.NavPanelStatusOnPanel[b-szva2dp204] {
+.button-on-show-panel[b-szva2dp204] {
     display: block;
     position: fixed;
 }

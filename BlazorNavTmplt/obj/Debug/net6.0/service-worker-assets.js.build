@@ -57,10 +57,6 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-KAWiHzEubzh6bbUIGN+zM8mm94BaT9cXcfBn9b+F\/u0=",
-      "url": "js\/MainLayoutFunctions.js"
-    },
-    {
       "hash": "sha256-9q6SO6LPst5xGaaBLQRgEoaytuYeBwn6P9bB5\/157pE=",
       "url": "manifest.json"
     },
@@ -81,7 +77,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-4pZ2bIh+u2eTlAdr3K+f\/G\/hVxODg9VX6CUdXF\/W1KQ=",
+      "hash": "sha256-7q9HyTlB2aZeMdqoCt\/q5kqN3ZIRjQ4FjLMDZyluEOI=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -885,5 +881,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "MVcQOdhh"
+  "version": "d8dPVDIO"
 };

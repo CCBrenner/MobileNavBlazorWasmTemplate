@@ -1,1 +1,1 @@
-# MobileNavBlazorWasmTemplateq
+# MobileNavBlazorWasmTemplate
