@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dCJhkzSENEE+HSj1wLHdoYq7ZbOyDIUEbboBECwLmnU=",
+  "Hash": "RTJPb6X61srP7JrOfEuYx4tnhKlvSDbJXOLBHbvpELs=",
   "Source": "BlazorNavTmplt",
   "BasePath": "/",
   "Mode": "Root",
@@ -7138,23 +7138,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\js\\MainLayoutFunctions.js",
-      "SourceId": "BlazorNavTmplt",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "js/MainLayoutFunctions.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\MainLayoutFunctions.js"
     },
     {
       "Identity": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\manifest.json",

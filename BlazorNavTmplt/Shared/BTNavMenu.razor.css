@@ -1,7 +1,7 @@
 
 /* start Mobile view */
 
-.topLevelOfComponent {
+.top-level-of-component {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
     z-index: 2;
 }
