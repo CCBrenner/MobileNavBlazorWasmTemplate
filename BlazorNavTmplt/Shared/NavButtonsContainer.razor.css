@@ -16,3 +16,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (min-width: 78vh) {
+    .bottom-row {
+        width: calc(var(--app-container-width) - 4px);  /* 4px == .bottom-row.style.margin */
+        left: calc(calc(100vw - var(--app-container-width)) / 2);
+    }
+}

@@ -1767,11 +1767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\BlazorNavTmplt.csproj",
+      "projectUniqueName": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\BlazorNavTmplt.csproj",
       "projectName": "BlazorNavTmplt",
-      "projectPath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\BlazorNavTmplt.csproj",
+      "projectPath": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\BlazorNavTmplt.csproj",
       "packagesPath": "C:\\Users\\Collyn B - VotP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Collyn B - VotP\\Desktop\\Professional\\Software Engineering\\projects\\gh_clone_hosting\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\obj\\",
+      "outputPath": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Collyn B - VotP\\AppData\\Roaming\\NuGet\\NuGet.Config",

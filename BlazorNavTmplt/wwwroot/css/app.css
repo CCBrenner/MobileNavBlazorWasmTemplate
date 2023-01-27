@@ -4,15 +4,29 @@
 
 :root {
     /* start Layout positioning values */
+    /* 
+        nearly 16:9 aspect ratio (100:56.7)
+        4:3 aspect ratio
+        100vw;  /* default  
+    */
+    --app-container-height: 100vh;
+    --app-container-width: 100vw;
     --top-bar-height: 56px; /* top */
     --footer-height: 50px; /* bottom (since applied to nav buttons, subtract) */
-    --content-height: calc(100vh - calc(var(--top-bar-height) + var(--footer-height))); /* middle */
+    --content-height: calc( var(--app-container-height) - calc(calc(var(--top-bar-height) + var(--footer-height)) + 2px)); /* middle */
 
     --sidebar-width-mobile: 100vw;
     --mobile-menu-height: calc(calc(65vh - var(--top-bar-height)) - 10px); /* In vh measurement only. */
 
     --sidebar-width-desktop: 220px;
-    /* start Layout positioning values */
+
+    --panel-container-width: calc(var(--app-container-width) * 0.7);
+    --app-container-horiz-negativespace-offset: calc(calc(100vw - var(--app-container-width)) / 2);
+    /* 
+        mobile-tablet breakpoint: 78vh
+        tablet-desktop breakpoint: 1008px
+    */
+    /* end Layout positioning values */
 }
 
 /* pause Custom CSS */
@@ -112,10 +126,17 @@ a, .btn-link {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 78vh) {
+    :root {
+        --app-container-width: 56vh;
+    }
     .loading-container {
         font-size: 4rem;
     }
+}
+
+@media (min-width: 1008px) {
+
 }
 
 /* end Custom CSS */

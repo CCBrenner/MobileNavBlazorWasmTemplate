@@ -1,6 +1,6 @@
 ﻿.panel-container {
     max-height: var(--mobile-menu-height);
-    width: 70vw;
+    width: var(--panel-container-width);
     padding: 4px;
     z-index: 10;
     display: none;
@@ -48,10 +48,32 @@
 
 /* end Plugable statuses */
 
-@media (min-width: 641px) {
+@media (min-width: 78vh) {
 
     .navcontainer-custom {
         height: var(--content-height);
         width: auto;
+    }
+
+    .panel-container {
+        left: var(--app-container-horiz-negativespace-offset);
+    }
+
+    .panel-position-b {
+        left: calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 5));
+    }
+
+    .panel-position-c {
+        left: calc(calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 2)) - calc(var(--panel-container-width) / 2));
+    }
+
+    .panel-position-d {
+        left: auto;
+        right: calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 5));
+    }
+
+    .panel-position-e {
+        left: auto;
+        right: var(--app-container-horiz-negativespace-offset);
     }
 }

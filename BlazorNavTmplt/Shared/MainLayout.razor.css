@@ -30,10 +30,6 @@
     padding: 20px;
 }
 
-main {
-    flex: 1;
-}
-
 .sidebar {
     position: fixed;
     top: 0px;
@@ -41,6 +37,123 @@ main {
     right: 0px;
     z-index: 1;
 }
+
+.top-level-of-component {
+    background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
+    z-index: 2;
+}
+
+.nav-button {
+    color: white;
+    background-color: rgb(19, 20, 29);
+    border: 0px solid black;
+    border-radius: 12px;
+    height: calc(var(--top-bar-height) - 16px);
+    z-index: 10;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    ;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+    width: 1.8rem;
+    font-size: 0.9rem;
+    vertical-align: text-top;
+    top: -1px;
+}
+
+.navlink {
+    border-left: 4px solid lightgrey;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex: 1;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+}
+
+    .nav-item ::deep a {
+        color: white;
+        border-radius: 12px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item ::deep a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+            border: 1px solid black;
+        }
+
+        .nav-item ::deep a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+    .nav-item ::deep i {
+        color: white;
+    }
+
+.behind-panel {
+    height: calc(var(--top-bar-height) + var(--content-height));
+    z-index: 9;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: var(--footer-height);
+}
+
+.panel-header {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+    .panel-header ::deep a {
+        color: white;
+    }
+
+        .panel-header ::deep a.active {
+            background-color: rgba(255,255,255,0.0);
+        }
+
+        .panel-header ::deep a:hover {
+            background-color: rgba(255,255,255,0.0);
+        }
+
+.panel-scrollablesection {
+    overflow-y: auto;
+    max-height: calc(var(--mobile-menu-height) - 68px - 0.5rem);
+    border-radius: 12px;
+    padding: 0px 0.4rem;
+}
+
+.collapsible-item {
+    margin-left: 28px;
+    padding-left: 0.4rem;
+    border-left: 4px solid grey;
+}
+
+/* start Plugable statuses */
+
+.button-on-highlight-button {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.button-on-show-panel {
+    display: block;
+    position: fixed;
+}
+
+/* end Plugable statuses */
 
 .header {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
@@ -61,7 +174,7 @@ main {
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: var(--top-bar-height);
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -88,67 +201,25 @@ main {
     overflow-y: auto;
 }
 
-@media (max-width: 640.98px) {
-    .top-row:not(.auth) {
-        display: none;
-    }
-
-    .top-row.auth {
-        justify-content: space-between;
-    }
-
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-    }
-
-    /* end Mobile view */
-
-}
-
-@media (min-width: 641px) {
+@media (min-width: 78vh) {
 
     /* start Desktop view */
 
     .page {
-        flex-direction: row;
-    }
+        background-color: #222;
+        width: 100vw;
+        height: 100vh;
 
-    .larger-than-mobile {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
     }
-
-    .sidebar {
-        width: var(--sidebar-width-desktop);
-        height: calc(100vh - var(--footer-height));
-        position: sticky;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
+    .main {
+        width: var(--app-container-width);
+        background-color: white;
     }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-
     .content {
-        width: calc(100vw - var(--sidebar-width-desktop));
+        width: var(--app-container-width);
     }
-
     /* end Desktop view */
-
 }
