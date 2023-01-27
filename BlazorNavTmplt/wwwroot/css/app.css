@@ -11,6 +11,7 @@
     */
     --app-container-height: 100vh;
     --app-container-width: 100vw;
+
     --top-bar-height: 56px; /* top */
     --footer-height: 50px; /* bottom (since applied to nav buttons, subtract) */
     --content-height: calc( var(--app-container-height) - calc(calc(var(--top-bar-height) + var(--footer-height)) + 2px)); /* middle */
@@ -128,7 +129,8 @@ a, .btn-link {
 
 @media (min-width: 78vh) {
     :root {
-        --app-container-width: 56vh;
+        --app-container-height: 90vh;
+        --app-container-width: 51vh;
     }
     .loading-container {
         font-size: 4rem;

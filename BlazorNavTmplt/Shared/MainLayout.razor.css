@@ -221,6 +221,12 @@
         justify-content: center;
     }
 
+    .larger-than-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .main {
         width: var(--app-container-width);
         background-color: white;
@@ -231,7 +237,7 @@
     }
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1008px), (min-width: 110vh) {
 
     .left-negative-space {
         display: block;
@@ -245,7 +251,7 @@
 
         .left-negative-space > p {
             margin: 0px 5vw;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
     .right-negative-space {
@@ -256,6 +262,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .qr-code-image {
         width: auto;
         height: 25vw;

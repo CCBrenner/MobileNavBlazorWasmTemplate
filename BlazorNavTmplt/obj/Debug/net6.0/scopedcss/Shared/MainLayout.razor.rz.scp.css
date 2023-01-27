@@ -221,6 +221,12 @@
         justify-content: center;
     }
 
+    .larger-than-mobile[b-1l7w3tgamb] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .main[b-1l7w3tgamb] {
         width: var(--app-container-width);
         background-color: white;
@@ -231,7 +237,7 @@
     }
 }
 
-@media (min-width: 1008px) {
+@media (min-width: 1008px), (min-width: 110vh) {
 
     .left-negative-space[b-1l7w3tgamb] {
         display: block;
@@ -245,7 +251,7 @@
 
         .left-negative-space > p[b-1l7w3tgamb] {
             margin: 0px 5vw;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
     .right-negative-space[b-1l7w3tgamb] {
@@ -256,6 +262,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .qr-code-image[b-1l7w3tgamb] {
         width: auto;
         height: 25vw;
