@@ -38,7 +38,7 @@
     z-index: 1;
 }
 
-.top-level-of-component[b-1l7w3tgamb] {
+.btnnavmenu-parent[b-1l7w3tgamb] {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
     z-index: 2;
 }
@@ -201,9 +201,15 @@
     overflow-y: auto;
 }
 
-@media (min-width: 78vh) {
+.left-negative-space[b-1l7w3tgamb] {
+    display: none;
+}
 
-    /* start Desktop view */
+.right-negative-space[b-1l7w3tgamb] {
+    display: none;
+}
+
+@media (min-width: 78vh) {
 
     .page[b-1l7w3tgamb] {
         background-color: #222;
@@ -214,12 +220,46 @@
         flex-direction: row;
         justify-content: center;
     }
+
     .main[b-1l7w3tgamb] {
         width: var(--app-container-width);
         background-color: white;
     }
+
     .content[b-1l7w3tgamb] {
         width: var(--app-container-width);
     }
-    /* end Desktop view */
+}
+
+@media (min-width: 1008px) {
+
+    .left-negative-space[b-1l7w3tgamb] {
+        display: block;
+        flex: 1;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .left-negative-space > p[b-1l7w3tgamb] {
+            margin: 0px 5vw;
+            font-size: 1.2rem;
+        }
+
+    .right-negative-space[b-1l7w3tgamb] {
+        display: block;
+        flex: 1;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .qr-code-image[b-1l7w3tgamb] {
+        width: auto;
+        height: 25vw;
+        border-radius: 35px;
+        padding: 20px;
+    }
 }

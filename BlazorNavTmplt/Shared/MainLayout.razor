@@ -24,7 +24,7 @@
 
         <!-- start BTNavMenu content -->
 
-        <div class="top-level-of-component">
+        <div class="btnnavmenu-parent">
 
             <NavButtonsContainer>
                 <!-- Could not turn buttons into components due to onclick syntax conflicts (would require restructuring classes) -->
@@ -263,6 +263,16 @@
 
     </div>
 
+    <div class="left-negative-space">
+        <p> 
+            Download this app today on any mobile device using the QR code on the right!
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            Or use your mobile browser to install this progressive web app (PWA) as an app on your device's homescreen!
+        </p>
+    </div>
+
     <main class="main">
         <div class="container-fluid header">
             <a class="navbar-brand" href="">MobileNav Template</a>
@@ -275,4 +285,10 @@
             @Body
         </article>
     </main>
+
+    <div class="right-negative-space">
+        <div class="qr-code">
+            <img src="media/images/frame.png" class="qr-code-image" />
+        </div>
+    </div>
 </div>

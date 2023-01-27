@@ -33,18 +33,6 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\css\\media\\images\\frame.png",
-      "PackagePath": "staticwebassets\\css\\media\\images\\frame.png"
-    },
-    {
-      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\css\\media\\images\\icon-192.png",
-      "PackagePath": "staticwebassets\\css\\media\\images\\icon-192.png"
-    },
-    {
-      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\css\\media\\images\\icon-512.png",
-      "PackagePath": "staticwebassets\\css\\media\\images\\icon-512.png"
-    },
-    {
       "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
@@ -91,6 +79,18 @@
     {
       "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\media\\images\\frame.png",
+      "PackagePath": "staticwebassets\\media\\images\\frame.png"
+    },
+    {
+      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\media\\images\\icon-192.png",
+      "PackagePath": "staticwebassets\\media\\images\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\media\\images\\icon-512.png",
+      "PackagePath": "staticwebassets\\media\\images\\icon-512.png"
     },
     {
       "Id": "C:\\Users\\Collyn B - VotP\\Desktop\\MobileNavBlazorWasmTemplate\\BlazorNavTmplt\\wwwroot\\sample-data\\weather.json",
