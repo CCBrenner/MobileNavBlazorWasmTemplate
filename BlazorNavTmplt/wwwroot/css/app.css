@@ -129,8 +129,8 @@ a, .btn-link {
 
 @media (min-width: 78vh) {
     :root {
-        --app-container-height: 90vh;
-        --app-container-width: 51vh;
+        --app-container-height: 100vh;
+        --app-container-width: 56vh;
     }
     .loading-container {
         font-size: 4rem;

@@ -22,8 +22,10 @@
 
         // For BehindPanel
         private bool globalNavButtonState = false;
-        protected string BehindPanel = "none";
+        protected string BehindPanel = "";
         private char CurrentButton = 'Z';
+
+        public string ContentBlur = "";
 
         public void UpdateNav(char buttonId)
         {
@@ -54,6 +56,7 @@
             UpdateButtons();
             UpdatePanels();
             UpdateBehindPanel();
+            UpdateContentBlur(globalNavButtonState);
         }
         private bool UpdateButtonState(bool buttonState)
         {
@@ -90,12 +93,14 @@
             NavPanelEStatus = UpdatePanel(buttonEIsOn);
         }
         private void UpdateBehindPanel() =>
-            BehindPanel = globalNavButtonState ? "block" : "none";
+            BehindPanel = globalNavButtonState ? "button-on-show-behind-panel" : "";
         protected void UpdateNavFromBehindPanel() =>
             UpdateNav(CurrentButton);
         private string UpdateButton(bool buttonState) =>
             buttonState ? "button-on-highlight-button" : "";
         private string UpdatePanel(bool buttonState) =>
             buttonState ? "button-on-show-panel" : "";
+        private string UpdateContentBlur(bool buttonState) =>
+            ContentBlur = buttonState ? "content-blur" : "";
     }
 }

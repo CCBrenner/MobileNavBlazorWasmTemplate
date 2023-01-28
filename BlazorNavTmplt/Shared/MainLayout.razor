@@ -45,7 +45,7 @@
                 </div>
             </NavButtonsContainer>
 
-            <div class="behind-panel" style="display:@BehindPanel" @onclick="UpdateNavFromBehindPanel"></div>
+            <div class="behind-panel @BehindPanel" @onclick="UpdateNavFromBehindPanel"></div>
 
             <NavPanelContainer PanelPosition="" NavPanelStatus="@NavPanelAStatus">
                 <div class="panel-scrollablesection">
@@ -118,7 +118,7 @@
                             <span class="icon fa-solid fa-wand-magic-sparkles" aria-hidden="true"></span>First Item (H)
                         </NavLink>
                     </div>
-                    <div class="nav-item" @onclick="(()=>UpdateNav('A'))">
+                    <div class="nav-item" @onclick="(()=>UpdateNav('C'))">
                         <NavLink class="nav-link" href="#">
                             <span class="icon fa-solid fa-house" aria-hidden="true"></span>Hello, world!
                         </NavLink>
@@ -281,7 +281,7 @@
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 
-        <article class="content px-4">
+        <article class="content @ContentBlur px-4">
             @Body
         </article>
     </main>

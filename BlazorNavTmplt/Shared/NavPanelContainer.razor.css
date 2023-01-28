@@ -3,11 +3,13 @@
     width: var(--panel-container-width);
     padding: 4px;
     z-index: 10;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     left: 0px;
     right: 0px;
     bottom: var(--footer-height);
+    transition: visibility 0.2s, opacity 0.2s;
 }
 
 .panel {
@@ -42,8 +44,10 @@
 }
 
 .button-on-show-panel {
-    display: block;
     position: fixed;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.2s, opacity 0.2s;
 }
 
 /* end Plugable statuses */

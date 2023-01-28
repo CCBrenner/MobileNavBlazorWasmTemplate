@@ -40,7 +40,6 @@
 
 .btnnavmenu-parent {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
-    z-index: 2;
 }
 
 .nav-button {
@@ -102,12 +101,13 @@
     }
 
 .behind-panel {
-    height: calc(var(--top-bar-height) + var(--content-height));
-    z-index: 9;
+    height: var(--app-container-height);
+    z-index: 8;
+    display: none;
     position: fixed;
     left: 0px;
     right: 0px;
-    bottom: var(--footer-height);
+    bottom: 0px;
 }
 
 .panel-header {
@@ -151,6 +151,17 @@
 .button-on-show-panel {
     display: block;
     position: fixed;
+    transition: display 0.2s;
+}
+
+.button-on-show-behind-panel {
+    display: block;
+    background-color: rgba(0,0,60,0.1);
+    transition: background-color 0.2s;
+}
+
+.content-blur {
+    filter: blur(2.5px);
 }
 
 /* end Plugable statuses */
@@ -199,6 +210,7 @@
     bottom: var(--footer-height);
     width: var(--sidebar-width-mobile);
     overflow-y: auto;
+    transition: filter 0.35s;
 }
 
 .left-negative-space {
@@ -225,6 +237,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .behind-panel {
+        width: var(--app-container-width);
+        left: var(--app-container-horiz-negativespace-offset);
     }
 
     .main {
