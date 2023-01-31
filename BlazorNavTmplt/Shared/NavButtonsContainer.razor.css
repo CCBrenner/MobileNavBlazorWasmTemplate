@@ -3,7 +3,7 @@
     background-color: rgb(19, 20, 29);
     border-radius: 14px;
     margin: 2px;
-    z-index: 9;
+    z-index: 40;
     position: fixed;
     left: 0px;
     right: 0px;
@@ -19,7 +19,11 @@
 
 @media (min-width: 78vh) {
     .container-one {
-        width: calc(var(--app-container-width) - 4px); /* 4px == .bottom-row.style.margin */
-        left: calc(calc(100vw - var(--app-container-width)) / 2);
+        position: absolute;
+        top: auto;
+        right: auto;
+        left: 0px;
+        z-index: 40;
+        width: calc(100% - 4px); /* 4px == .bottom-row.style.margin */
     }
 }

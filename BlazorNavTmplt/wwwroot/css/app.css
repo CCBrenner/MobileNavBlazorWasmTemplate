@@ -21,7 +21,7 @@
 
     --sidebar-width-desktop: 220px;
 
-    --panel-container-width: calc(var(--app-container-width) * 0.7);
+    --panel-container-width: 70%;
     --app-container-horiz-negativespace-offset: calc(calc(100vw - var(--app-container-width)) / 2);
     /* 
         mobile-tablet breakpoint: 78vh
@@ -139,6 +139,13 @@ a, .btn-link {
 
 @media (min-width: 1008px) {
 
+}
+
+@media (max-height: 380px) {
+    * {
+        /* for mobile landscape orientation */
+        font-size: 0.8rem;
+    }
 }
 
 /* end Custom CSS */

@@ -2,7 +2,7 @@
     max-height: var(--mobile-menu-height);
     width: var(--panel-container-width);
     padding: 4px;
-    z-index: 10;
+    z-index: 30;
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -52,12 +52,8 @@
 
 /* end Plugable statuses */
 
-@media (min-width: 78vh) {
-
-    .navcontainer-custom {
-        height: var(--content-height);
-        width: auto;
-    }
+/*
+    @media (min-width: 78vh) {
 
     .panel-container {
         left: var(--app-container-horiz-negativespace-offset);
@@ -81,3 +77,36 @@
         right: var(--app-container-horiz-negativespace-offset);
     }
 }
+*/
+
+@media (min-width: 78vh) {
+
+    .panel-container {
+        position: absolute;
+        bottom: var(--footer-height);
+        height: calc(calc(100% - calc(var(--footer-height) + var(--top-bar-height))) * 0.65);
+    }
+
+    .panel {
+        height: 100%;
+    }
+
+    .panel-position-b {
+        left: calc(calc(100% - 12px) / 5);
+    }
+
+    .panel-position-c {
+        left: calc(calc(calc(100% - 12px) / 2) - calc(var(--panel-container-width) / 2));
+    }
+
+    .panel-position-d {
+        left: auto;
+        right: calc(calc(100% - 12px) / 5);
+    }
+
+    .panel-position-e {
+        left: auto;
+        right: 0px;
+    }
+}
+

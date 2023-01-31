@@ -102,7 +102,7 @@
 
 .behind-panel {
     height: var(--app-container-height);
-    z-index: 8;
+    z-index: 20;
     display: none;
     position: fixed;
     left: 0px;
@@ -229,8 +229,10 @@
         height: 100vh;
 
         display: flex;
+        position: relative;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
     .larger-than-mobile {
@@ -239,18 +241,46 @@
         align-items: center;
     }
 
-    .behind-panel {
+    .sidebar {
+        background-color: hotpink;
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
         width: var(--app-container-width);
-        left: var(--app-container-horiz-negativespace-offset);
+        height: var(--app-container-height);
+    }
+    
+    .btnnavmenu-parent {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .behind-panel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
     }
 
     .main {
-        width: var(--app-container-width);
+        width: calc(var(--app-container-width) * 0.95);
+        height: calc(var(--app-container-height) * 0.95);
         background-color: white;
+        position: relative;
+        /* animation: main1 7s ease-in-out infinite; */
     }
 
     .content {
-        width: var(--app-container-width);
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        width: 100%;
+        height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
+    }
+    .panel-scrollablesection {
+        height: calc(100% - 52px);
     }
 }
 
@@ -285,5 +315,185 @@
         height: 25vw;
         border-radius: 35px;
         padding: 20px;
+    }
+}
+
+/* animation: main1 7s ease-in-out infinite; */
+@keyframes main1 {
+    0% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+        transform: rotate(0deg);
+    }
+    12.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+    25% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+        transform: rotate(180deg);
+    }
+    37.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+    50% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+        transform: rotate(360deg);
+    }
+    62.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    75% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+        transform: rotate(180deg);
+    }
+
+    87.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    100% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+        transform: rotate(0deg);
+    }
+}
+
+/* animation: main2 10s ease-in-out infinite; */
+@keyframes main2 {
+    0% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(0deg);
+    }
+
+    12.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    25% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+    }
+
+    37.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    50% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(360deg);
+    }
+
+    62.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    75% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+    }
+
+    87.5% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    100% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(0deg);
+    }
+}
+
+/* animation: main3 7s ease-in-out infinite; */
+@keyframes main3 {
+    0% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(0deg);
+    }
+
+    20% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    40% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(360deg);
+    }
+
+    50% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(360deg);
+    }
+
+    75% {
+        height: calc(var(--app-container-height) * 0.4);
+        width: calc(var(--app-container-width) * 0.4);
+    }
+
+    90% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        height: calc(var(--app-container-height) * 0.9);
+        width: calc(var(--app-container-width) * 0.9);
+        transform: rotate(0deg);
+    }
+}
+
+/* animation: main4 7s ease-in-out infinite; */
+@keyframes main4 {
+    0% {
+        height: calc(var(--app-container-height) * 0.6);
+        width: calc(var(--app-container-width) * 0.6);
+        transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+
+    33% {
+        transform: rotateX(360deg) rotateY(0deg) rotate(0deg);
+    }
+
+    67% {
+        transform: rotateX(360deg) rotateY(360deg) rotate(0deg);
+    }
+
+    100% {
+        height: calc(var(--app-container-height) * 0.6);
+        width: calc(var(--app-container-width) * 0.6);
+        transform: rotateX(360deg) rotateY(360deg) rotate(720deg);
+    }
+}
+
+/* animation: main5 7s linear infinite; */
+@keyframes main5 {
+    0% {
+        height: calc(var(--app-container-height) * 0.6);
+        width: calc(var(--app-container-width) * 0.6);
+        transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+
+    100% {
+        height: calc(var(--app-container-height) * 0.6);
+        width: calc(var(--app-container-width) * 0.6);
+        transform: rotateX(360deg) rotateY(360deg) rotate(7200deg);
     }
 }
