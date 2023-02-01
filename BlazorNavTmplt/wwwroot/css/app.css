@@ -27,6 +27,8 @@
         mobile-tablet breakpoint: 78vh
         tablet-desktop breakpoint: 1008px
     */
+
+    --app-background-color: #eee;
     /* end Layout positioning values */
 }
 
@@ -129,8 +131,8 @@ a, .btn-link {
 
 @media (min-width: 78vh) {
     :root {
-        --app-container-height: 100vh;
-        --app-container-width: 56vh;
+        --app-container-height: calc(100vh * 0.95);
+        --app-container-width: calc(56vh * 0.95);
     }
     .loading-container {
         font-size: 4rem;

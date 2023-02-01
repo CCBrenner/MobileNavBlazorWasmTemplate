@@ -4,10 +4,12 @@
     border-radius: 14px;
     margin: 2px;
     z-index: 40;
-    position: fixed;
+    position: absolute;
+    top: auto;
     left: 0px;
-    right: 0px;
+    right: auto;
     bottom: 0px;
+    width: calc(100% - 4px); /* 4px == .bottom-row.style.margin */
 }
 
 .container-two {
@@ -15,15 +17,4 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media (min-width: 78vh) {
-    .container-one {
-        position: absolute;
-        top: auto;
-        right: auto;
-        left: 0px;
-        z-index: 40;
-        width: calc(100% - 4px); /* 4px == .bottom-row.style.margin */
-    }
 }

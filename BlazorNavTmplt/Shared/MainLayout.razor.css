@@ -2,9 +2,14 @@
 /* start Mobile view */
 
 .page {
+    background-color: #222;
     position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .larger-than-mobile {
@@ -52,7 +57,6 @@
     display: flex;
     flex: 1;
     justify-content: space-around;
-    ;
     align-items: center;
 }
 
@@ -164,13 +168,56 @@
     filter: blur(2.5px);
 }
 
+.animate-app {
+    display: none;
+}
+
+.layout-controls-on {
+    background-color: var(--app-background-color);
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - calc(var(--top-bar-height) + var(--footer-height)));
+    width: 100%;
+    top: var(--top-bar-height);
+    z-index: 10;
+}
+
 /* end Plugable statuses */
+
+.layout-control-item {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continuous-animate-stop {
+    background-color: darkblue;
+    color: #222;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    z-index: 50;
+    width: 140px;
+    height: 75px;
+    left: calc(calc(100vw / 2) - 70px);
+    /*top: calc(calc(100vh / 2) - 38px);*/
+    bottom: calc(100vh * 0.05);
+}
+
+.discontinue-button-on {
+    display: flex;
+}
 
 .header {
     background-image: linear-gradient(145deg, rgb(5, 39, 103) -5%, red 120%);
     background-color: rgba(0,0,0,0.4);
     height: var(--top-bar-height);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,11 +251,31 @@
         text-overflow: ellipsis;
     }
 
+.main {
+    width: var(--app-container-width);
+    height: var(--app-container-height);
+    background-color: var(--app-background-color);
+    position: relative;
+}
+
+/* start Pluggable clases */
+.main1 { animation: main1 7s ease-in-out; }
+.main1-infinite { animation: main1 7s ease-in-out infinite; }
+.main2 { animation: main2 10s ease-in-out; }
+.main2-infinite { animation: main2 10s ease-in-out infinite; }
+.main3 { animation: main3 7s ease-in-out; }
+.main3-infinite { animation: main3 7s ease-in-out infinite; }
+.main4 { animation: main4 7s ease-in-out; }
+.main4-infinite { animation: main4 7s ease-in-out infinite; }
+.main5 { animation: main5 7s linear; }
+.main5-infinite { animation: main5 7s linear infinite; }
+/* end Pluggable clases */
+
 .content {
-    position: fixed;
-    top: var(--top-bar-height);
-    bottom: var(--footer-height);
-    width: var(--sidebar-width-mobile);
+    position: absolute;
+    padding: 16px 16px 0px 16px;
+    height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
+    width: 100%;
     overflow-y: auto;
     transition: filter 0.35s;
 }
@@ -222,18 +289,6 @@
 }
 
 @media (min-width: 78vh) {
-
-    .page {
-        background-color: #222;
-        width: 100vw;
-        height: 100vh;
-
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
     .larger-than-mobile {
         display: flex;
@@ -264,23 +319,12 @@
         position: absolute;
     }
 
-    .main {
-        width: calc(var(--app-container-width) * 0.95);
-        height: calc(var(--app-container-height) * 0.95);
-        background-color: white;
-        position: relative;
-        /* animation: main1 7s ease-in-out infinite; */
-    }
-
-    .content {
-        position: absolute;
-        top: auto;
-        bottom: auto;
-        width: 100%;
-        height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
-    }
     .panel-scrollablesection {
         height: calc(100% - 52px);
+    }
+
+    .external-layout-controls {
+        display: block;
     }
 }
 
@@ -369,8 +413,8 @@
 /* animation: main2 10s ease-in-out infinite; */
 @keyframes main2 {
     0% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(0deg);
     }
 
@@ -380,8 +424,8 @@
     }
 
     25% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
     }
 
     37.5% {
@@ -390,8 +434,8 @@
     }
 
     50% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(360deg);
     }
 
@@ -401,8 +445,8 @@
     }
 
     75% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: calc(var(--app-container-height));
+        width: calc(var(--app-container-width));
     }
 
     87.5% {
@@ -411,8 +455,8 @@
     }
 
     100% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(0deg);
     }
 }
@@ -420,8 +464,8 @@
 /* animation: main3 7s ease-in-out infinite; */
 @keyframes main3 {
     0% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(0deg);
     }
 
@@ -431,14 +475,14 @@
     }
 
     40% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(360deg);
     }
 
     50% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(360deg);
     }
 
@@ -448,14 +492,14 @@
     }
 
     90% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(0deg);
     }
 
     100% {
-        height: calc(var(--app-container-height) * 0.9);
-        width: calc(var(--app-container-width) * 0.9);
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotate(0deg);
     }
 }
@@ -463,6 +507,10 @@
 /* animation: main4 7s ease-in-out infinite; */
 @keyframes main4 {
     0% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
+    }
+    5% {
         height: calc(var(--app-container-height) * 0.6);
         width: calc(var(--app-container-width) * 0.6);
         transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
@@ -476,9 +524,15 @@
         transform: rotateX(360deg) rotateY(360deg) rotate(0deg);
     }
 
-    100% {
+    95% {
         height: calc(var(--app-container-height) * 0.6);
         width: calc(var(--app-container-width) * 0.6);
+        transform: rotateX(360deg) rotateY(360deg) rotate(720deg);
+    }
+
+    100% {
+        height: var(--app-container-height);
+        width: var(--app-container-width);
         transform: rotateX(360deg) rotateY(360deg) rotate(720deg);
     }
 }

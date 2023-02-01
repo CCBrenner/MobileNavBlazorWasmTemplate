@@ -27,6 +27,18 @@
 
         public string ContentBlur = "";
 
+        public bool FirstAnimationIsContinuous = false;
+        public bool SecondAnimationIsContinuous = false;
+        public bool ThirdAnimationIsContinuous = false;
+        public bool FourthAnimationIsContinuous = false;
+        public bool FifthAnimationIsContinuous = false;
+
+        public string LayoutControls = "";
+        public string AnimateMain = "";
+        public string DiscontinueButton = "";
+
+        public bool ExternalLayoutControls = false;
+
         public void UpdateNav(char buttonId)
         {
             CurrentButton = buttonId;
@@ -102,5 +114,77 @@
             buttonState ? "button-on-show-panel" : "";
         private string UpdateContentBlur(bool buttonState) =>
             ContentBlur = buttonState ? "content-blur" : "";
+
+        public void PlayAnimation(int animation)
+        {
+            switch (animation)
+            {
+                case 1:
+                    if (FirstAnimationIsContinuous)
+                    {
+                        AnimateMain = "main1-infinite";
+                        DiscontinueButton = "discontinue-button-on";
+                    }
+                    else
+                        AnimateMain = "main1";
+                    break;
+                case 2:
+                    if (SecondAnimationIsContinuous)
+                    {
+                        AnimateMain = "main2-infinite";
+                        DiscontinueButton = "discontinue-button-on";
+                    }
+                    else
+                        AnimateMain = "main2";
+                    break;
+                case 3:
+                    if (ThirdAnimationIsContinuous)
+                    {
+                        AnimateMain = "main3-infinite";
+                        DiscontinueButton = "discontinue-button-on";
+                    }
+                    else
+                        AnimateMain = "main3";
+                    break;
+                case 4:
+                    if (FourthAnimationIsContinuous)
+                    {
+                        AnimateMain = "main4-infinite";
+                        DiscontinueButton = "discontinue-button-on";
+                    }
+                    else
+                        AnimateMain = "main4";
+                    break;
+                case 5:
+                    if (FifthAnimationIsContinuous)
+                    {
+                        AnimateMain = "main5-infinite";
+                        DiscontinueButton = "discontinue-button-on";
+                    }
+                    else
+                        AnimateMain = "main5";
+                    break;
+                default:
+                    AnimateMain = "";
+                    break;
+            }
+        }
+        public void StopMainAnimation()
+        {
+            AnimateMain = "";
+            DiscontinueButton = "";
+        }
+        public void ShowLayoutControls(char character)
+        {
+            UpdateNav(character);
+            LayoutControls = "layout-controls-on";
+        }
+        public void UpdateNavFromRoute(char character)
+        {
+            LayoutControls = "";
+            UpdateNav(character);
+        }
+        public void SetExternalLayoutControlsToTrue() =>
+            ExternalLayoutControls = true;
     }
 }
