@@ -1,0 +1,30 @@
+.larger-than-mobile[b-bek7p5yik2] {
+    background-color: #eee;
+    width: 100vw;
+    height: 100vh;
+    z-index: 60;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.ltm-section[b-bek7p5yik2] {
+    padding: 8px;
+}
+
+.larger-than-mobile-image[b-bek7p5yik2] {
+    width: auto;
+    height: 50vh;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+@media (min-width: 78vh) {
+
+    .larger-than-mobile[b-bek7p5yik2] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

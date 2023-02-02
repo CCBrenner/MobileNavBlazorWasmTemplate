@@ -115,58 +115,79 @@
         private string UpdateContentBlur(bool buttonState) =>
             ContentBlur = buttonState ? "content-blur" : "";
 
-        public void PlayAnimation(int animation)
+        public void PlayFirstAnimation(bool isContinuous)
         {
-            switch (animation)
+            if (isContinuous)
             {
-                case 1:
-                    if (FirstAnimationIsContinuous)
-                    {
-                        AnimateMain = "main1-infinite";
-                        DiscontinueButton = "discontinue-button-on";
-                    }
-                    else
-                        AnimateMain = "main1";
-                    break;
-                case 2:
-                    if (SecondAnimationIsContinuous)
-                    {
-                        AnimateMain = "main2-infinite";
-                        DiscontinueButton = "discontinue-button-on";
-                    }
-                    else
-                        AnimateMain = "main2";
-                    break;
-                case 3:
-                    if (ThirdAnimationIsContinuous)
-                    {
-                        AnimateMain = "main3-infinite";
-                        DiscontinueButton = "discontinue-button-on";
-                    }
-                    else
-                        AnimateMain = "main3";
-                    break;
-                case 4:
-                    if (FourthAnimationIsContinuous)
-                    {
-                        AnimateMain = "main4-infinite";
-                        DiscontinueButton = "discontinue-button-on";
-                    }
-                    else
-                        AnimateMain = "main4";
-                    break;
-                case 5:
-                    if (FifthAnimationIsContinuous)
-                    {
-                        AnimateMain = "main5-infinite";
-                        DiscontinueButton = "discontinue-button-on";
-                    }
-                    else
-                        AnimateMain = "main5";
-                    break;
-                default:
+                AnimateMain = "main1-infinite";
+                DiscontinueButton = "discontinue-button-on";
+            }
+            else
+            {
+                if (AnimateMain == "main1")
                     AnimateMain = "";
-                    break;
+                else
+                    AnimateMain = "main1";
+            }
+        }
+        public void PlaySecondAnimation(bool isContinuous)
+        {
+            if (isContinuous)
+            {
+                AnimateMain = "main2-infinite";
+                DiscontinueButton = "discontinue-button-on";
+            }
+            else
+            {
+                if (AnimateMain == "main2")
+                    AnimateMain = "";
+                else
+                    AnimateMain = "main2";
+            }
+        }
+        public void PlayThirdAnimation(bool isContinuous)
+        {
+            if (isContinuous)
+            {
+                AnimateMain = "main3-infinite";
+                DiscontinueButton = "discontinue-button-on";
+            }
+            else
+            {
+                if (AnimateMain == "main3")
+                    AnimateMain = "";
+                else
+                    AnimateMain = "main3";
+            }
+        }
+        public void PlayFourthAnimation(bool isContinuous)
+        {
+            if (isContinuous)
+            {
+                AnimateMain = "main4-infinite";
+                DiscontinueButton = "discontinue-button-on";
+            }
+            else
+            {
+                if (AnimateMain == "main4")
+                    AnimateMain = "";
+                else
+                    AnimateMain = "main4";
+            }
+        }
+        public void PlayFifthAnimation(bool isContinuous)
+        {
+            if (isContinuous)
+            {
+                AnimateMain = "main5-infinite";
+                DiscontinueButton = "discontinue-button-on";
+            }
+            else
+            {
+                if (AnimateMain == "main5")
+                    AnimateMain = "";
+                else 
+                    AnimateMain = "main5";
             }
         }
         public void StopMainAnimation()

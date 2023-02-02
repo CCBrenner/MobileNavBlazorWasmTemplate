@@ -39,10 +39,6 @@
 
 /* start Plugable statuses */
 
-.button-on-highlight-button[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.25);
-}
-
 .button-on-show-panel[b-szva2dp204] {
     visibility: visible;
     opacity: 1;
