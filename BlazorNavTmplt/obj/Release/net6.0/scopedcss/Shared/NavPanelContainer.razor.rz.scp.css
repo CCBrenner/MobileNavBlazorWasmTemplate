@@ -1,11 +1,10 @@
 .panel-container[b-szva2dp204] {
-    max-height: var(--mobile-menu-height);
     width: var(--panel-container-width);
     padding: 4px;
-    z-index: 10;
+    z-index: 30;
     visibility: hidden;
     opacity: 0;
-    position: fixed;
+    position: absolute;
     left: 0px;
     right: 0px;
     bottom: var(--footer-height);
@@ -16,20 +15,21 @@
     border-radius: 12px;
     background-color: rgb(19, 20, 29);
     padding-top: 0.6rem;
+    height: 100%;
     z-index: 10;
 }
 
 .panel-position-b[b-szva2dp204] {
-    left: calc(calc(100vw - 12px) / 5);
+    left: calc(calc(100% - 12px) / 5);
 }
 
 .panel-position-c[b-szva2dp204] {
-    left: calc(calc(calc(100vw - 12px) / 2) - 35vw);
+    left: calc(calc(calc(100% - 12px) / 2) - calc(var(--panel-container-width) / 2));
 }
 
 .panel-position-d[b-szva2dp204] {
     left: auto;
-    right: calc(calc(100vw - 12px) / 5);
+    right: calc(calc(100% - 12px) / 5);
 }
 
 .panel-position-e[b-szva2dp204] {
@@ -39,45 +39,10 @@
 
 /* start Plugable statuses */
 
-.button-on-highlight-button[b-szva2dp204] {
-    background-color: rgba(255,255,255,0.25);
-}
-
 .button-on-show-panel[b-szva2dp204] {
-    position: fixed;
     visibility: visible;
     opacity: 1;
     transition: visibility 0.2s, opacity 0.2s;
 }
 
 /* end Plugable statuses */
-
-@media (min-width: 78vh) {
-
-    .navcontainer-custom[b-szva2dp204] {
-        height: var(--content-height);
-        width: auto;
-    }
-
-    .panel-container[b-szva2dp204] {
-        left: var(--app-container-horiz-negativespace-offset);
-    }
-
-    .panel-position-b[b-szva2dp204] {
-        left: calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 5));
-    }
-
-    .panel-position-c[b-szva2dp204] {
-        left: calc(calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 2)) - calc(var(--panel-container-width) / 2));
-    }
-
-    .panel-position-d[b-szva2dp204] {
-        left: auto;
-        right: calc(var(--app-container-horiz-negativespace-offset) + calc(calc(var(--app-container-width) - 12px) / 5));
-    }
-
-    .panel-position-e[b-szva2dp204] {
-        left: auto;
-        right: var(--app-container-horiz-negativespace-offset);
-    }
-}

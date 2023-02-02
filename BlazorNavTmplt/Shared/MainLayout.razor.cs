@@ -203,6 +203,7 @@
         public void UpdateNavFromRoute(char character)
         {
             LayoutControls = "";
+            AnimateMain = "";
             UpdateNav(character);
         }
         public void SetExternalLayoutControlsToTrue() =>

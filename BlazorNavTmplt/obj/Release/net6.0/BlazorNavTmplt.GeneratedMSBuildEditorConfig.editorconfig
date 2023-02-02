@@ -60,22 +60,34 @@ build_metadata.AdditionalFiles.CssScope = b-avgayfhj3a
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9hZGluZ1NwaW5uZXJzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-r0qe8b9x7g
 
-[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/BTNavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJUTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-dl8nkf9rip
+[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/AppAnimations.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFwcEFuaW1hdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mnsqh7p251
+
+[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/ClosedStageCurtain.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENsb3NlZFN0YWdlQ3VydGFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bek7p5yik2
 
 [C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/CollapsingSection.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbGxhcHNpbmdTZWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-p4qwvi34pd
 
+[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/LayerContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheWVyQ29udGFpbmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-gxukk1jkbi
+
 [C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-1l7w3tgamb
 
-[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavButtonsContainer.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdkJ1dHRvbnNDb250YWluZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-eyn8zozzm9
+[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdkJ1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rb87el1kr8
 
 [C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavPanelContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdlBhbmVsQ29udGFpbmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-szva2dp204
+
+[C:/Users/Collyn B - VotP/Desktop/Professional/Software Engineering/projects/gh_clone_hosting/MobileNavBlazorWasmTemplate/BlazorNavTmplt/Shared/NavPanels.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdlBhbmVscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-d9fe0tn46k
