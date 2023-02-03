@@ -2,7 +2,7 @@
 /* start Mobile view */
 
 .icon[b-d9fe0tn46k] {
-    color: white;
+    color: #eee;
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
@@ -22,7 +22,7 @@
 }
 
     .nav-item[b-d9fe0tn46k]  a {
-        color: white;
+        color: #eee;
         border-radius: 12px;
         height: 3rem;
         display: flex;
@@ -32,28 +32,28 @@
 
         .nav-item[b-d9fe0tn46k]  a.active {
             background-color: rgba(255,255,255,0.25);
-            color: white;
+            color: #eee;
             border: 1px solid black;
         }
 
         .nav-item[b-d9fe0tn46k]  a:hover {
             background-color: rgba(255,255,255,0.1);
-            color: white;
+            color: #eee;
         }
 
     .nav-item[b-d9fe0tn46k]  i {
-        color: white;
+        color: #eee;
     }
 
 .panel-header[b-d9fe0tn46k] {
     background-color: rgba(255,255,255,0.25);
-    color: white;
+    color: #eee;
     border-radius: 12px;
     border: 2px solid black;
 }
 
     .panel-header[b-d9fe0tn46k]  a {
-        color: white;
+        color: #eee;
     }
 
         .panel-header[b-d9fe0tn46k]  a.active {

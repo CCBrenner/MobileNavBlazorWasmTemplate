@@ -180,6 +180,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--app-color);
 }
 /* /Shared/ClosedStageCurtain.razor.rz.scp.css */
 .larger-than-mobile[b-bek7p5yik2] {
@@ -300,6 +301,7 @@
 
 .layout-controls-on[b-1l7w3tgamb] {
     background-color: var(--app-background-color);
+    color: var(--app-color);
     padding: 0px 16px;
     display: flex;
     flex-direction: column;
@@ -407,7 +409,7 @@
 }
 
 @media (min-width: 78vh) {
-
+   
     .main[b-1l7w3tgamb] {
         height: var(--app-container-height);
     }

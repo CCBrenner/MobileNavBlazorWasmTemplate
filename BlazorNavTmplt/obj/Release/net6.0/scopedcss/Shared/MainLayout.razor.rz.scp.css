@@ -62,7 +62,7 @@
 
 .continuous-animate-stop[b-1l7w3tgamb] {
     background-color: darkblue;
-    color: #222;
+    color: #eee;
     position: fixed;
     display: none;
     justify-content: center;
@@ -72,7 +72,6 @@
     width: 140px;
     height: 75px;
     left: calc(calc(100vw / 2) - 70px);
-    /*top: calc(calc(100vh / 2) - 38px);*/
     bottom: calc(100vh * 0.05);
 }
 
@@ -90,8 +89,8 @@
 }
 
     .header a[b-1l7w3tgamb] {
-        color: white;
-    }
+        color: #eee;
+    } 
 
 .top-row[b-1l7w3tgamb] {
     background-color: #f7f7f7;
@@ -126,18 +125,19 @@
 
 /* start Pluggable clases */
 .main1[b-1l7w3tgamb] { animation: main1a-b-1l7w3tgamb 7s ease-in-out; }
-.main1-infinite[b-1l7w3tgamb] { animation: main1 7s ease-in-out infinite; }
+.main1-infinite[b-1l7w3tgamb] { animation: main1a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main2[b-1l7w3tgamb] { animation: main2a-b-1l7w3tgamb 10s ease-in-out; }
-.main2-infinite[b-1l7w3tgamb] { animation: main2 10s ease-in-out infinite; }
+.main2-infinite[b-1l7w3tgamb] { animation: main2a-b-1l7w3tgamb 10s ease-in-out infinite; }
 .main3[b-1l7w3tgamb] { animation: main3a-b-1l7w3tgamb 7s ease-in-out; }
-.main3-infinite[b-1l7w3tgamb] { animation: main3 7s ease-in-out infinite; }
+.main3-infinite[b-1l7w3tgamb] { animation: main3a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main4[b-1l7w3tgamb] { animation: main4a-b-1l7w3tgamb 7s ease-in-out; }
-.main4-infinite[b-1l7w3tgamb] { animation: main4 7s ease-in-out infinite; }
+.main4-infinite[b-1l7w3tgamb] { animation: main4a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main5[b-1l7w3tgamb] { animation: main5a-b-1l7w3tgamb 7s linear; }
-.main5-infinite[b-1l7w3tgamb] { animation: main5 7s linear infinite; }
+.main5-infinite[b-1l7w3tgamb] { animation: main5a-b-1l7w3tgamb 7s linear infinite; }
 /* end Pluggable clases */
 
 .content[b-1l7w3tgamb] {
+    color: var(--app-color);
     position: absolute;
     padding: 16px 16px 0px 16px;
     height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
@@ -162,15 +162,15 @@
 
     /* start Pluggable clases */
 .main1[b-1l7w3tgamb] { animation: main1b-b-1l7w3tgamb 7s ease-in-out; }
-.main1-infinite[b-1l7w3tgamb] { animation: main1 7s ease-in-out infinite; }
+.main1-infinite[b-1l7w3tgamb] { animation: main1b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main2[b-1l7w3tgamb] { animation: main2b-b-1l7w3tgamb 10s ease-in-out; }
-.main2-infinite[b-1l7w3tgamb] { animation: main2 10s ease-in-out infinite; }
+.main2-infinite[b-1l7w3tgamb] { animation: main2b-b-1l7w3tgamb 10s ease-in-out infinite; }
 .main3[b-1l7w3tgamb] { animation: main3b-b-1l7w3tgamb 7s ease-in-out; }
-.main3-infinite[b-1l7w3tgamb] { animation: main3 7s ease-in-out infinite; }
+.main3-infinite[b-1l7w3tgamb] { animation: main3b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main4[b-1l7w3tgamb] { animation: main4b-b-1l7w3tgamb 7s ease-in-out; }
-.main4-infinite[b-1l7w3tgamb] { animation: main4 7s ease-in-out infinite; }
+.main4-infinite[b-1l7w3tgamb] { animation: main4b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main5[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear; }
-.main5-infinite[b-1l7w3tgamb] { animation: main5 7s linear infinite; }
+.main5-infinite[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear infinite; }
 /* end Pluggable clases */
 
     .behind-panel[b-1l7w3tgamb] {
@@ -189,7 +189,7 @@
     .left-negative-space[b-1l7w3tgamb] {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -204,7 +204,7 @@
     .right-negative-space[b-1l7w3tgamb] {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         justify-content: center;
         align-items: center;

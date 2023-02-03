@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BlazorNavTmplt.dll": "sha256-qeubGxwhLDBFY3grCLFdqcl0EeSkdvXbibGjGhLPxS0=",
+      "BlazorNavTmplt.dll": "sha256-VV2+5WnU23yHACLlSa3vt4uir5lkISD1vA9mlox1lEY=",
       "Microsoft.AspNetCore.Components.dll": "sha256-c6yeUuCakxENq\/H8UVvU8LHZCPqR1hdD1gtPt1dLBsk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-S2XlKCG64QvgX1Fe5xRSW3qSqW2vVr28vr5oKCW+eFI=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-Fv5S8h4Pj8PM7GqBQvnLfcF4XEwSQ9gv243lDFmjxco=",

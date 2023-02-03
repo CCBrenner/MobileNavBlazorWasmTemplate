@@ -107,11 +107,11 @@ a, .btn-link {
 
 .app {
     background-color: #222;
-    color: #eee;
     height: 100vh;
 }
 
 .loading-container {
+    color: #eee;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -131,21 +131,21 @@ a, .btn-link {
 .topleft {
     background-color: darkred;
     position: fixed;
-    top: -450px;
-    left: -450px;
-    height: 700px;
-    width: 700px;
-    transform: rotate(45deg);
+    top: calc(-45vw - calc(100vw * 0.08));
+    left: -25vw;
+    height: 60vw;
+    width: 60vw;
+    transform: rotate(60deg);
 }
 
 .bottomright {
     background-color: darkblue;
     position: fixed;
-    bottom: -450px;
-    right: -450px;
-    height: 700px;
-    width: 700px;
-    transform: rotate(45deg);
+    bottom: calc(-45vw - calc(100vw * 0.08));
+    right: -25vw;
+    height: 60vw;
+    width: 60vw;
+    transform: rotate(60deg);
 }
 
 @media (min-width: 78vh) {
