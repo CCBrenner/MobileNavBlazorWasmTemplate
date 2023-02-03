@@ -1,5 +1,5 @@
 .larger-than-mobile[b-bek7p5yik2] {
-    background-color: #eee;
+    background-color: var(--app-background-color);
     width: 100vw;
     height: 100vh;
     z-index: 60;

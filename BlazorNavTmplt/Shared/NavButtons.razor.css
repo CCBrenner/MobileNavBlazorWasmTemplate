@@ -19,7 +19,7 @@
 }
 
 .nav-button {
-    color: white;
+    color: #eee;
     background-color: rgb(19, 20, 29);
     border: 0px solid black;
     border-radius: 12px;
@@ -32,7 +32,7 @@
 }
 
 .icon {
-    color: white;
+    color: #eee;
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
@@ -52,7 +52,7 @@
 }
 
     .nav-item ::deep a {
-        color: white;
+        color: #eee;
         border-radius: 12px;
         height: 3rem;
         display: flex;
@@ -62,17 +62,17 @@
 
         .nav-item ::deep a.active {
             background-color: rgba(255,255,255,0.25);
-            color: white;
+            color: #eee;
             border: 1px solid black;
         }
 
         .nav-item ::deep a:hover {
             background-color: rgba(255,255,255,0.1);
-            color: white;
+            color: #eee;
         }
 
     .nav-item ::deep i {
-        color: white;
+        color: #eee;
     }
 
 /* start Plugable statuses */
@@ -82,3 +82,11 @@
 }
 
 /* end Plugable statuses */
+
+@media (min-width: 78vh) {
+}
+
+@media (min-width: 1008px), (min-width: 110vh) {
+}
+
+

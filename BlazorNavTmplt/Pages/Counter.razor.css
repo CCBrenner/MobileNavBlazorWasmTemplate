@@ -1,4 +1,12 @@
-﻿.no-margin {
+﻿.page-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 0px 16px 0px;
+}
+.no-margin {
     margin: 0px;
 }
 .count {
@@ -11,20 +19,25 @@
     background-color: lightgrey;
     border-radius: 8px;
     padding: 4px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
 }
 .posicube-container {
-    align-self: end;
-
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: center;
-    align-content: end;
+    align-content: center;
+    overflow-y: auto;
 }
 .negacube-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: start;
+    justify-content: center;
+    align-content: center;
+    overflow-y: auto;
 }
 .cube {
     margin: 1px;

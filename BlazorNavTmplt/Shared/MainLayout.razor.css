@@ -62,7 +62,7 @@
 
 .continuous-animate-stop {
     background-color: darkblue;
-    color: #222;
+    color: #eee;
     position: fixed;
     display: none;
     justify-content: center;
@@ -72,7 +72,6 @@
     width: 140px;
     height: 75px;
     left: calc(calc(100vw / 2) - 70px);
-    /*top: calc(calc(100vh / 2) - 38px);*/
     bottom: calc(100vh * 0.05);
 }
 
@@ -90,8 +89,8 @@
 }
 
     .header a {
-        color: white;
-    }
+        color: #eee;
+    } 
 
 .top-row {
     background-color: #f7f7f7;
@@ -126,18 +125,19 @@
 
 /* start Pluggable clases */
 .main1 { animation: main1a 7s ease-in-out; }
-.main1-infinite { animation: main1 7s ease-in-out infinite; }
+.main1-infinite { animation: main1a 7s ease-in-out infinite; }
 .main2 { animation: main2a 10s ease-in-out; }
-.main2-infinite { animation: main2 10s ease-in-out infinite; }
+.main2-infinite { animation: main2a 10s ease-in-out infinite; }
 .main3 { animation: main3a 7s ease-in-out; }
-.main3-infinite { animation: main3 7s ease-in-out infinite; }
+.main3-infinite { animation: main3a 7s ease-in-out infinite; }
 .main4 { animation: main4a 7s ease-in-out; }
-.main4-infinite { animation: main4 7s ease-in-out infinite; }
+.main4-infinite { animation: main4a 7s ease-in-out infinite; }
 .main5 { animation: main5a 7s linear; }
-.main5-infinite { animation: main5 7s linear infinite; }
+.main5-infinite { animation: main5a 7s linear infinite; }
 /* end Pluggable clases */
 
 .content {
+    color: var(--app-color);
     position: absolute;
     padding: 16px 16px 0px 16px;
     height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
@@ -162,15 +162,15 @@
 
     /* start Pluggable clases */
 .main1 { animation: main1b 7s ease-in-out; }
-.main1-infinite { animation: main1 7s ease-in-out infinite; }
+.main1-infinite { animation: main1b 7s ease-in-out infinite; }
 .main2 { animation: main2b 10s ease-in-out; }
-.main2-infinite { animation: main2 10s ease-in-out infinite; }
+.main2-infinite { animation: main2b 10s ease-in-out infinite; }
 .main3 { animation: main3b 7s ease-in-out; }
-.main3-infinite { animation: main3 7s ease-in-out infinite; }
+.main3-infinite { animation: main3b 7s ease-in-out infinite; }
 .main4 { animation: main4b 7s ease-in-out; }
-.main4-infinite { animation: main4 7s ease-in-out infinite; }
+.main4-infinite { animation: main4b 7s ease-in-out infinite; }
 .main5 { animation: main5b 7s linear; }
-.main5-infinite { animation: main5 7s linear infinite; }
+.main5-infinite { animation: main5b 7s linear infinite; }
 /* end Pluggable clases */
 
     .behind-panel {
@@ -189,7 +189,7 @@
     .left-negative-space {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -204,7 +204,7 @@
     .right-negative-space {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         justify-content: center;
         align-items: center;

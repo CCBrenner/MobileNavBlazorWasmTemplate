@@ -1,4 +1,12 @@
 /* /Pages/Counter.razor.rz.scp.css */
+.page-container[b-avgayfhj3a] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 0px 16px 0px;
+}
 .no-margin[b-avgayfhj3a] {
     margin: 0px;
 }
@@ -12,20 +20,25 @@
     background-color: lightgrey;
     border-radius: 8px;
     padding: 4px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
 }
 .posicube-container[b-avgayfhj3a] {
-    align-self: end;
-
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: center;
-    align-content: end;
+    align-content: center;
+    overflow-y: auto;
 }
 .negacube-container[b-avgayfhj3a] {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: start;
+    justify-content: center;
+    align-content: center;
+    overflow-y: auto;
 }
 .cube[b-avgayfhj3a] {
     margin: 1px;
@@ -162,8 +175,6 @@
 
 /* /Shared/AppAnimations.razor.rz.scp.css */
 
-/* start Mobile view */
-
 .layout-control-item[b-mnsqh7p251] {
     padding: 3px;
     display: flex;
@@ -172,7 +183,7 @@
 }
 /* /Shared/ClosedStageCurtain.razor.rz.scp.css */
 .larger-than-mobile[b-bek7p5yik2] {
-    background-color: #eee;
+    background-color: var(--app-background-color);
     width: 100vw;
     height: 100vh;
     z-index: 60;
@@ -204,7 +215,7 @@
 /* /Shared/CollapsingSection.razor.rz.scp.css */
 .collapsible-section-header[b-p4qwvi34pd] {
     z-index: 10;
-    color: white;
+    color: #eee;
     height: 3rem;
     padding-left: 16px;
     padding-right: 0.25rem;
@@ -244,7 +255,7 @@
 
 .page-container[b-1l7w3tgamb] {
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -303,7 +314,7 @@
 
 .continuous-animate-stop[b-1l7w3tgamb] {
     background-color: darkblue;
-    color: #222;
+    color: #eee;
     position: fixed;
     display: none;
     justify-content: center;
@@ -313,7 +324,6 @@
     width: 140px;
     height: 75px;
     left: calc(calc(100vw / 2) - 70px);
-    /*top: calc(calc(100vh / 2) - 38px);*/
     bottom: calc(100vh * 0.05);
 }
 
@@ -331,8 +341,8 @@
 }
 
     .header a[b-1l7w3tgamb] {
-        color: white;
-    }
+        color: #eee;
+    } 
 
 .top-row[b-1l7w3tgamb] {
     background-color: #f7f7f7;
@@ -367,18 +377,19 @@
 
 /* start Pluggable clases */
 .main1[b-1l7w3tgamb] { animation: main1a-b-1l7w3tgamb 7s ease-in-out; }
-.main1-infinite[b-1l7w3tgamb] { animation: main1 7s ease-in-out infinite; }
+.main1-infinite[b-1l7w3tgamb] { animation: main1a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main2[b-1l7w3tgamb] { animation: main2a-b-1l7w3tgamb 10s ease-in-out; }
-.main2-infinite[b-1l7w3tgamb] { animation: main2 10s ease-in-out infinite; }
+.main2-infinite[b-1l7w3tgamb] { animation: main2a-b-1l7w3tgamb 10s ease-in-out infinite; }
 .main3[b-1l7w3tgamb] { animation: main3a-b-1l7w3tgamb 7s ease-in-out; }
-.main3-infinite[b-1l7w3tgamb] { animation: main3 7s ease-in-out infinite; }
+.main3-infinite[b-1l7w3tgamb] { animation: main3a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main4[b-1l7w3tgamb] { animation: main4a-b-1l7w3tgamb 7s ease-in-out; }
-.main4-infinite[b-1l7w3tgamb] { animation: main4 7s ease-in-out infinite; }
+.main4-infinite[b-1l7w3tgamb] { animation: main4a-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main5[b-1l7w3tgamb] { animation: main5a-b-1l7w3tgamb 7s linear; }
-.main5-infinite[b-1l7w3tgamb] { animation: main5 7s linear infinite; }
+.main5-infinite[b-1l7w3tgamb] { animation: main5a-b-1l7w3tgamb 7s linear infinite; }
 /* end Pluggable clases */
 
 .content[b-1l7w3tgamb] {
+    color: var(--app-color);
     position: absolute;
     padding: 16px 16px 0px 16px;
     height: calc(100% - calc(var(--footer-height) + var(--top-bar-height)));
@@ -403,15 +414,15 @@
 
     /* start Pluggable clases */
 .main1[b-1l7w3tgamb] { animation: main1b-b-1l7w3tgamb 7s ease-in-out; }
-.main1-infinite[b-1l7w3tgamb] { animation: main1 7s ease-in-out infinite; }
+.main1-infinite[b-1l7w3tgamb] { animation: main1b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main2[b-1l7w3tgamb] { animation: main2b-b-1l7w3tgamb 10s ease-in-out; }
-.main2-infinite[b-1l7w3tgamb] { animation: main2 10s ease-in-out infinite; }
+.main2-infinite[b-1l7w3tgamb] { animation: main2b-b-1l7w3tgamb 10s ease-in-out infinite; }
 .main3[b-1l7w3tgamb] { animation: main3b-b-1l7w3tgamb 7s ease-in-out; }
-.main3-infinite[b-1l7w3tgamb] { animation: main3 7s ease-in-out infinite; }
+.main3-infinite[b-1l7w3tgamb] { animation: main3b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main4[b-1l7w3tgamb] { animation: main4b-b-1l7w3tgamb 7s ease-in-out; }
-.main4-infinite[b-1l7w3tgamb] { animation: main4 7s ease-in-out infinite; }
+.main4-infinite[b-1l7w3tgamb] { animation: main4b-b-1l7w3tgamb 7s ease-in-out infinite; }
 .main5[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear; }
-.main5-infinite[b-1l7w3tgamb] { animation: main5 7s linear infinite; }
+.main5-infinite[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear infinite; }
 /* end Pluggable clases */
 
     .behind-panel[b-1l7w3tgamb] {
@@ -430,7 +441,7 @@
     .left-negative-space[b-1l7w3tgamb] {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -445,7 +456,7 @@
     .right-negative-space[b-1l7w3tgamb] {
         display: block;
         flex: 1;
-        color: white;
+        color: #eee;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -862,7 +873,7 @@
 }
 
 .nav-button[b-rb87el1kr8] {
-    color: white;
+    color: #eee;
     background-color: rgb(19, 20, 29);
     border: 0px solid black;
     border-radius: 12px;
@@ -875,7 +886,7 @@
 }
 
 .icon[b-rb87el1kr8] {
-    color: white;
+    color: #eee;
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
@@ -895,7 +906,7 @@
 }
 
     .nav-item[b-rb87el1kr8]  a {
-        color: white;
+        color: #eee;
         border-radius: 12px;
         height: 3rem;
         display: flex;
@@ -905,17 +916,17 @@
 
         .nav-item[b-rb87el1kr8]  a.active {
             background-color: rgba(255,255,255,0.25);
-            color: white;
+            color: #eee;
             border: 1px solid black;
         }
 
         .nav-item[b-rb87el1kr8]  a:hover {
             background-color: rgba(255,255,255,0.1);
-            color: white;
+            color: #eee;
         }
 
     .nav-item[b-rb87el1kr8]  i {
-        color: white;
+        color: #eee;
     }
 
 /* start Plugable statuses */
@@ -925,6 +936,14 @@
 }
 
 /* end Plugable statuses */
+
+@media (min-width: 78vh) {
+}
+
+@media (min-width: 1008px), (min-width: 110vh) {
+}
+
+
 /* /Shared/NavPanelContainer.razor.rz.scp.css */
 .panel-container[b-szva2dp204] {
     width: var(--panel-container-width);
@@ -979,7 +998,7 @@
 /* start Mobile view */
 
 .icon[b-d9fe0tn46k] {
-    color: white;
+    color: #eee;
     width: 1.8rem;
     font-size: 0.9rem;
     vertical-align: text-top;
@@ -999,7 +1018,7 @@
 }
 
     .nav-item[b-d9fe0tn46k]  a {
-        color: white;
+        color: #eee;
         border-radius: 12px;
         height: 3rem;
         display: flex;
@@ -1009,28 +1028,28 @@
 
         .nav-item[b-d9fe0tn46k]  a.active {
             background-color: rgba(255,255,255,0.25);
-            color: white;
+            color: #eee;
             border: 1px solid black;
         }
 
         .nav-item[b-d9fe0tn46k]  a:hover {
             background-color: rgba(255,255,255,0.1);
-            color: white;
+            color: #eee;
         }
 
     .nav-item[b-d9fe0tn46k]  i {
-        color: white;
+        color: #eee;
     }
 
 .panel-header[b-d9fe0tn46k] {
     background-color: rgba(255,255,255,0.25);
-    color: white;
+    color: #eee;
     border-radius: 12px;
     border: 2px solid black;
 }
 
     .panel-header[b-d9fe0tn46k]  a {
-        color: white;
+        color: #eee;
     }
 
         .panel-header[b-d9fe0tn46k]  a.active {
