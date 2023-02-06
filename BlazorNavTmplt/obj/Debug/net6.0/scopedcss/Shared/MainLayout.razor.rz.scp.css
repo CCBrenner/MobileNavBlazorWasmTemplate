@@ -220,13 +220,39 @@
         border-radius: 35px;
         padding: 20px;
     }
-}
+}*/
 
 /* Part of Option 3 */
 @media (min-width: 78vh) {
+    .main[b-1l7w3tgamb] {
+        width: 100%;
+    }
+
     .content[b-1l7w3tgamb] {
         height: calc(100% - var(--top-bar-height));
         padding: 16px 44px 0px 44px;
+    }
+
+    .layout-controls-on[b-1l7w3tgamb] {
+        height: calc(100% - calc(var(--top-bar-height)));
+    }
+}
+
+/* Part of Option 3 */
+@media (min-width: 1008px) {
+
+    .main[b-1l7w3tgamb] {
+        width: var(--app-container-width);
+    }
+
+    .behind-panel[b-1l7w3tgamb] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .external-layout-controls[b-1l7w3tgamb] {
+        display: block;
     }
 
     /* start Pluggable clases */
@@ -241,23 +267,6 @@
     .main5[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear; }
     .main5-infinite[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear infinite; }
     /* end Pluggable clases */
-
-    .behind-panel[b-1l7w3tgamb] {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    .external-layout-controls[b-1l7w3tgamb] {
-        display: block;
-    }
-
-    .layout-controls-on[b-1l7w3tgamb] {
-        height: calc(100% - calc(var(--top-bar-height)));
-    }
-}
-/* Part of Option 3 */
-@media (min-width: 140vh) {
 
     .left-negative-space[b-1l7w3tgamb] {
         display: block;
@@ -290,7 +299,6 @@
         padding: 20px;
     }
 }
-
 
 /* start Animations keyframes */
 /* animation: main1 7s ease-in-out infinite; */

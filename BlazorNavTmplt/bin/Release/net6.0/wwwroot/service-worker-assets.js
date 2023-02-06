@@ -77,7 +77,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-D\/sVxAQsxyXdF5pT1zIR53C3KoY6j9gTzPc4VXEMKTY=",
+      "hash": "sha256-akjvccO9pJ0Frawc8QJVHNhXJHqaUcC\/zJ2ZfenVML8=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -881,5 +881,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "OS9a5VAu"
+  "version": "4lLKcUil"
 };
