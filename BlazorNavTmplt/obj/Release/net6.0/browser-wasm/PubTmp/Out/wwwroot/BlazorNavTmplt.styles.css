@@ -180,6 +180,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--app-color);
 }
 /* /Shared/ClosedStageCurtain.razor.rz.scp.css */
 .larger-than-mobile[b-bek7p5yik2] {
@@ -300,6 +301,7 @@
 
 .layout-controls-on[b-1l7w3tgamb] {
     background-color: var(--app-background-color);
+    color: var(--app-color);
     padding: 0px 16px;
     display: flex;
     flex-direction: column;
@@ -406,8 +408,11 @@
     display: none;
 }
 
-@media (min-width: 78vh) {
 
+/* Part of Option2 */
+
+@media (min-width: 78vh) {
+   
     .main[b-1l7w3tgamb] {
         height: var(--app-container-height);
     }
@@ -470,6 +475,10 @@
     }
 }
 
+
+
+
+/* start Animations keyframes */
 /* animation: main1 7s ease-in-out infinite; */
 @keyframes main1a-b-1l7w3tgamb {
     0% {
@@ -851,6 +860,7 @@
         transform: rotateX(360deg) rotateY(360deg) rotate(7200deg);
     }
 }
+/* end Animations keyframes */
 /* /Shared/NavButtons.razor.rz.scp.css */
 .container-one[b-rb87el1kr8] {
     background-color: rgb(19, 20, 29);
@@ -858,9 +868,7 @@
     margin: 2px;
     z-index: 40;
     position: absolute;
-    top: auto;
     left: 0px;
-    right: auto;
     bottom: 0px;
     width: calc(100% - 4px); /* 4px == .bottom-row.style.margin */
 }
@@ -901,34 +909,6 @@
     flex: 1;
 }
 
-.nav-item[b-rb87el1kr8] {
-    font-size: 0.9rem;
-}
-
-    .nav-item[b-rb87el1kr8]  a {
-        color: #eee;
-        border-radius: 12px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-        .nav-item[b-rb87el1kr8]  a.active {
-            background-color: rgba(255,255,255,0.25);
-            color: #eee;
-            border: 1px solid black;
-        }
-
-        .nav-item[b-rb87el1kr8]  a:hover {
-            background-color: rgba(255,255,255,0.1);
-            color: #eee;
-        }
-
-    .nav-item[b-rb87el1kr8]  i {
-        color: #eee;
-    }
-
 /* start Plugable statuses */
 
 .button-on-highlight-button[b-rb87el1kr8] {
@@ -937,8 +917,24 @@
 
 /* end Plugable statuses */
 
+/*
 @media (min-width: 78vh) {
-}
+    .container-one {
+        top: calc(50vh - calc(calc(var(--top-bar-height) - 16px) * 2.5));
+        right: 0px;
+        left: auto;
+        bottom: auto;
+        height: calc(calc(var(--top-bar-height) - 16px) * 5);
+        width: calc(var(--top-bar-height) - 16px);
+    }
+    .container-two {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .nav-button {
+    }
+}*/
 
 @media (min-width: 1008px), (min-width: 110vh) {
 }

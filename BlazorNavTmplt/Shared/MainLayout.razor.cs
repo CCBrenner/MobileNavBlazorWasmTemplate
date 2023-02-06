@@ -20,6 +20,12 @@
         protected string NavPanelDStatus = "";
         protected string NavPanelEStatus = "";
 
+        private bool locationIsA = false;
+        private bool locationIsB = false;
+        private bool locationIsC = true;
+        private bool locationIsD = false;
+        private bool locationIsE = false;
+
         // For BehindPanel
         private bool globalNavButtonState = false;
         protected string BehindPanel = "";
@@ -27,41 +33,38 @@
 
         public string ContentBlur = "";
 
-        public bool FirstAnimationIsContinuous = false;
-        public bool SecondAnimationIsContinuous = false;
-        public bool ThirdAnimationIsContinuous = false;
-        public bool FourthAnimationIsContinuous = false;
-        public bool FifthAnimationIsContinuous = false;
-
         public string LayoutControls = "";
         public string AnimateMain = "";
         public string DiscontinueButton = "";
 
         public bool ExternalLayoutControls = false;
 
+        protected override void OnInitialized() =>
+            UpdateButtons();
+  
         public void UpdateNav(char buttonId)
         {
             CurrentButton = buttonId;
             switch (buttonId)
             {
                 case 'A':
-                    buttonAIsOn = UpdateButtonState(buttonAIsOn);
+                    buttonAIsOn = UpdateButtonStates(buttonAIsOn);
                     globalNavButtonState = buttonAIsOn;
                     break;
                 case 'B':
-                    buttonBIsOn = UpdateButtonState(buttonBIsOn);
+                    buttonBIsOn = UpdateButtonStates(buttonBIsOn);
                     globalNavButtonState = buttonBIsOn;
                     break;
                 case 'C':
-                    buttonCIsOn = UpdateButtonState(buttonCIsOn);
+                    buttonCIsOn = UpdateButtonStates(buttonCIsOn);
                     globalNavButtonState = buttonCIsOn;
                     break;
                 case 'D':
-                    buttonDIsOn = UpdateButtonState(buttonDIsOn);
+                    buttonDIsOn = UpdateButtonStates(buttonDIsOn);
                     globalNavButtonState = buttonDIsOn;
                     break;
                 case 'E':
-                    buttonEIsOn = UpdateButtonState(buttonEIsOn);
+                    buttonEIsOn = UpdateButtonStates(buttonEIsOn);
                     globalNavButtonState = buttonEIsOn;
                     break;
             }
@@ -70,17 +73,26 @@
             UpdateBehindPanel();
             UpdateContentBlur(globalNavButtonState);
         }
-        private bool UpdateButtonState(bool buttonState)
+        protected void UpdateNavFromBehindPanel() =>
+            UpdateNav(CurrentButton);
+        public void UpdateNavFromRoute(char character)
+        {
+            UpdateLocation(character);
+            LayoutControls = "";
+            AnimateMain = "";
+            UpdateNav(character);
+        }
+        private bool UpdateButtonStates(bool buttonState)
         {
             if (buttonState)
                 return false;
             else
             {
-                TurnAllButtonsOff();
+                SetAllButtonStatesToFalse();
                 return true;
             }
         }
-        private void TurnAllButtonsOff()
+        private void SetAllButtonStatesToFalse()
         {
             buttonAIsOn = false;
             buttonBIsOn = false;
@@ -90,11 +102,18 @@
         }
         private void UpdateButtons()
         {
-            NavButtonAStatus = UpdateButton(buttonAIsOn);
-            NavButtonBStatus = UpdateButton(buttonBIsOn);
-            NavButtonCStatus = UpdateButton(buttonCIsOn);
-            NavButtonDStatus = UpdateButton(buttonDIsOn);
-            NavButtonEStatus = UpdateButton(buttonEIsOn);
+            NavButtonAStatus = UpdateButton(buttonAIsOn, locationIsA);
+            NavButtonBStatus = UpdateButton(buttonBIsOn, locationIsB);
+            NavButtonCStatus = UpdateButton(buttonCIsOn, locationIsC);
+            NavButtonDStatus = UpdateButton(buttonDIsOn, locationIsD);
+            NavButtonEStatus = UpdateButton(buttonEIsOn, locationIsE);
+        }
+        private string UpdateButton(bool buttonState, bool locationState)
+        {
+            if (!buttonState && !locationState || globalNavButtonState && locationState && !buttonState)
+                return "";
+            else
+                return "button-on-highlight-button";
         }
         private void UpdatePanels()
         {
@@ -104,90 +123,175 @@
             NavPanelDStatus = UpdatePanel(buttonDIsOn);
             NavPanelEStatus = UpdatePanel(buttonEIsOn);
         }
-        private void UpdateBehindPanel() =>
-            BehindPanel = globalNavButtonState ? "button-on-show-behind-panel" : "";
-        protected void UpdateNavFromBehindPanel() =>
-            UpdateNav(CurrentButton);
-        private string UpdateButton(bool buttonState) =>
-            buttonState ? "button-on-highlight-button" : "";
         private string UpdatePanel(bool buttonState) =>
             buttonState ? "button-on-show-panel" : "";
+        private void UpdateBehindPanel() =>
+            BehindPanel = globalNavButtonState ? "button-on-show-behind-panel" : "";
         private string UpdateContentBlur(bool buttonState) =>
             ContentBlur = buttonState ? "content-blur" : "";
+        private void UpdateLocation(char character)
+        {
+            locationIsA = false;
+            locationIsB = false;
+            locationIsC = false;
+            locationIsD = false;
+            locationIsE = false;
+            switch (character)
+            {
+                case 'A':
+                    locationIsA = true;
+                    break;
+                case 'B':
+                    locationIsB = true;
+                    break;
+                case 'C':
+                    locationIsC = true;
+                    break;
+                case 'D':
+                    locationIsD = true;
+                    break;
+                case 'E':
+                    locationIsE = true;
+                    break;
+            }
+        }
 
+        public void ShowLayoutControls(char character)
+        {
+            UpdateLocation(character);
+            UpdateNav(character);
+            LayoutControls = "layout-controls-on";
+        }
+        public void SetExternalLayoutControlsToTrue() =>
+            ExternalLayoutControls = true;
         public void PlayFirstAnimation(bool isContinuous)
         {
             if (isContinuous)
             {
-                AnimateMain = "main1-infinite";
-                DiscontinueButton = "discontinue-button-on";
+                if (AnimateMain == "main1-infinite")
+                {
+                    AnimateMain = "";
+                    DiscontinueButton = "";
+                }
+                else
+                {
+                    AnimateMain = "main1-infinite";
+                    DiscontinueButton = "discontinue-button-on";
+                }
             }
             else
             {
                 if (AnimateMain == "main1")
                     AnimateMain = "";
                 else
+                {
                     AnimateMain = "main1";
+                    DiscontinueButton = "";
+                }
             }
         }
         public void PlaySecondAnimation(bool isContinuous)
         {
             if (isContinuous)
             {
-                AnimateMain = "main2-infinite";
-                DiscontinueButton = "discontinue-button-on";
+                if (AnimateMain == "main2-infinite")
+                {
+                    AnimateMain = "";
+                    DiscontinueButton = "";
+                }
+                else
+                {
+                    AnimateMain = "main2-infinite";
+                    DiscontinueButton = "discontinue-button-on";
+                }
             }
             else
             {
                 if (AnimateMain == "main2")
                     AnimateMain = "";
                 else
+                {
                     AnimateMain = "main2";
+                    DiscontinueButton = "";
+                }
             }
         }
         public void PlayThirdAnimation(bool isContinuous)
         {
             if (isContinuous)
             {
-                AnimateMain = "main3-infinite";
-                DiscontinueButton = "discontinue-button-on";
+                if (AnimateMain == "main3-infinite")
+                {
+                    AnimateMain = "";
+                    DiscontinueButton = "";
+                }
+                else
+                {
+                    AnimateMain = "main3-infinite";
+                    DiscontinueButton = "discontinue-button-on";
+                }
             }
             else
             {
                 if (AnimateMain == "main3")
                     AnimateMain = "";
                 else
+                {
                     AnimateMain = "main3";
+                    DiscontinueButton = "";
+                }
             }
         }
         public void PlayFourthAnimation(bool isContinuous)
         {
             if (isContinuous)
             {
-                AnimateMain = "main4-infinite";
-                DiscontinueButton = "discontinue-button-on";
+                if (AnimateMain == "main4-infinite")
+                {
+                    AnimateMain = "";
+                    DiscontinueButton = "";
+                }
+                else
+                {
+                    AnimateMain = "main4-infinite";
+                    DiscontinueButton = "discontinue-button-on";
+                }
             }
             else
             {
                 if (AnimateMain == "main4")
                     AnimateMain = "";
                 else
+                {
                     AnimateMain = "main4";
+                    DiscontinueButton = "";
+                }
             }
         }
         public void PlayFifthAnimation(bool isContinuous)
         {
             if (isContinuous)
             {
-                AnimateMain = "main5-infinite";
-                DiscontinueButton = "discontinue-button-on";
+                if (AnimateMain == "main5-infinite")
+                {
+                    AnimateMain = "";
+                    DiscontinueButton = "";
+                }
+                else
+                {
+                    AnimateMain = "main5-infinite";
+                    DiscontinueButton = "discontinue-button-on";
+                }
             }
             else
             {
                 if (AnimateMain == "main5")
                     AnimateMain = "";
-                else 
+                else
+                {
                     AnimateMain = "main5";
+                    DiscontinueButton = "";
+                }
             }
         }
         public void StopMainAnimation()
@@ -195,18 +299,5 @@
             AnimateMain = "";
             DiscontinueButton = "";
         }
-        public void ShowLayoutControls(char character)
-        {
-            UpdateNav(character);
-            LayoutControls = "layout-controls-on";
-        }
-        public void UpdateNavFromRoute(char character)
-        {
-            LayoutControls = "";
-            AnimateMain = "";
-            UpdateNav(character);
-        }
-        public void SetExternalLayoutControlsToTrue() =>
-            ExternalLayoutControls = true;
     }
 }

@@ -46,3 +46,27 @@
 }
 
 /* end Plugable statuses */
+
+/* Part of Option 3 */
+@media (min-width: 78vh) {
+    .panel-container {
+        width: 340px;
+        left: auto;
+        right: 44px;
+        bottom: 4px;
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4px 4px 0.6rem 4px;
+    }
+
+    .panel-position-b {
+        left: auto;
+    }
+
+    .panel-position-c {
+        left: auto;
+    }
+}

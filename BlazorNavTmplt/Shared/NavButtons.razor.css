@@ -4,9 +4,7 @@
     margin: 2px;
     z-index: 40;
     position: absolute;
-    top: auto;
     left: 0px;
-    right: auto;
     bottom: 0px;
     width: calc(100% - 4px); /* 4px == .bottom-row.style.margin */
 }
@@ -47,34 +45,6 @@
     flex: 1;
 }
 
-.nav-item {
-    font-size: 0.9rem;
-}
-
-    .nav-item ::deep a {
-        color: #eee;
-        border-radius: 12px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-        .nav-item ::deep a.active {
-            background-color: rgba(255,255,255,0.25);
-            color: #eee;
-            border: 1px solid black;
-        }
-
-        .nav-item ::deep a:hover {
-            background-color: rgba(255,255,255,0.1);
-            color: #eee;
-        }
-
-    .nav-item ::deep i {
-        color: #eee;
-    }
-
 /* start Plugable statuses */
 
 .button-on-highlight-button {
@@ -83,7 +53,27 @@
 
 /* end Plugable statuses */
 
+/* Part of Option 3 */
 @media (min-width: 78vh) {
+    .container-one {
+        bottom: calc(calc(4px + calc(var(--panel-height) * 0.5)) - calc(calc(var(--top-bar-height) - 6px) * 2.5));
+        right: 0px;
+        left: auto;
+        height: calc(calc(var(--top-bar-height) - 6px) * 5);
+        width: calc(var(--top-bar-height) - 16px);
+        display: flex;
+        flex-direction: column;
+    }
+    .container-two {
+        flex: 1;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 4px ;
+    }
+    .nav-button {
+        flex: 1;
+        width: calc(var(--top-bar-height) - 24px);
+    }
 }
 
 @media (min-width: 1008px), (min-width: 110vh) {

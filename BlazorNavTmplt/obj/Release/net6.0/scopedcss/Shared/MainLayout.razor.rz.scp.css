@@ -48,6 +48,7 @@
 
 .layout-controls-on[b-1l7w3tgamb] {
     background-color: var(--app-background-color);
+    color: var(--app-color);
     padding: 0px 16px;
     display: flex;
     flex-direction: column;
@@ -154,8 +155,11 @@
     display: none;
 }
 
-@media (min-width: 78vh) {
 
+/* Part of Option2 */
+
+@media (min-width: 78vh) {
+   
     .main[b-1l7w3tgamb] {
         height: var(--app-container-height);
     }
@@ -218,6 +222,10 @@
     }
 }
 
+
+
+
+/* start Animations keyframes */
 /* animation: main1 7s ease-in-out infinite; */
 @keyframes main1a-b-1l7w3tgamb {
     0% {
@@ -599,3 +607,4 @@
         transform: rotateX(360deg) rotateY(360deg) rotate(7200deg);
     }
 }
+/* end Animations keyframes */

@@ -4,7 +4,7 @@
 
 <div class="page-container">
     <div class="cube-container my-2">
-        <!-- Both of these are good candidates for component virtualization (render elements that are visible from the viewport first) -->
+        @* Both of these are good candidates for component virtualization (render elements that are visible from the viewport first) *@
         <div class="posicube-container">
             @for (int i = 0; i < @CounterService.Count; i++)
             {
@@ -32,11 +32,11 @@
         <button class="btn btn-primary mt-1" @onclick="CounterService.IncrementCount"><i class="fa-solid fa-plus"></i></button>
     </div>
     <div class="mt-2">
-        <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('T'))">XS</button>  <!-- 'T' for "Tiny" -->
+        <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('T'))">XS</button>  @* 'T' for "Tiny" *@
         <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('S'))">S</button>
         <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('M'))">M</button>
         <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('L'))">L</button>
-        <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('H'))">XL</button>  <!-- 'H' for "Huge" -->
+        <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeSize('H'))">XL</button>  @* 'H' for "Huge" *@
     </div>
     <div class="mt-2">
         <button class="btn size-shape-btn-color mt-1" @onclick="(()=>SetCubeShape('S'))"><i class="fa-solid fa-square"></i></button>

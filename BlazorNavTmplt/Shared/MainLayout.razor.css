@@ -155,13 +155,16 @@
     display: none;
 }
 
+
+/* Part of Option2 */
+/*
 @media (min-width: 78vh) {
    
     .main {
         height: var(--app-container-height);
     }
 
-    /* start Pluggable clases */
+    /* start Pluggable clases 
 .main1 { animation: main1b 7s ease-in-out; }
 .main1-infinite { animation: main1b 7s ease-in-out infinite; }
 .main2 { animation: main2b 10s ease-in-out; }
@@ -172,7 +175,7 @@
 .main4-infinite { animation: main4b 7s ease-in-out infinite; }
 .main5 { animation: main5b 7s linear; }
 .main5-infinite { animation: main5b 7s linear infinite; }
-/* end Pluggable clases */
+/* end Pluggable clases 
 
     .behind-panel {
         width: 100%;
@@ -184,7 +187,7 @@
         display: block;
     }
 }
-
+/* Part of Option2 
 @media (min-width: 1008px), (min-width: 110vh) {
 
     .left-negative-space {
@@ -219,6 +222,71 @@
     }
 }
 
+/* Part of Option 3 */
+@media (min-width: 78vh) {
+    .content {
+        height: calc(100% - var(--top-bar-height));
+        padding: 16px 44px 0px 44px;
+    }
+
+    /* start Pluggable clases */
+    .main1 { animation: main1b 7s ease-in-out; }
+    .main1-infinite { animation: main1b 7s ease-in-out infinite; }
+    .main2 { animation: main2b 10s ease-in-out; }
+    .main2-infinite { animation: main2b 10s ease-in-out infinite; }
+    .main3 { animation: main3b 7s ease-in-out; }
+    .main3-infinite { animation: main3b 7s ease-in-out infinite; }
+    .main4 { animation: main4b 7s ease-in-out; }
+    .main4-infinite { animation: main4b 7s ease-in-out infinite; }
+    .main5 { animation: main5b 7s linear; }
+    .main5-infinite { animation: main5b 7s linear infinite; }
+    /* end Pluggable clases */
+
+    .external-layout-controls {
+        display: block;
+    }
+
+    .layout-controls-on {
+        height: calc(100% - calc(var(--top-bar-height)));
+    }
+}
+/* Part of Option 3 */
+@media (min-width: 140vh) {
+
+    .left-negative-space {
+        display: block;
+        flex: 1;
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .left-negative-space > p {
+            margin: 0px 5vw;
+            font-size: 1.1rem;
+        }
+
+    .right-negative-space {
+        display: block;
+        flex: 1;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qr-code-image {
+        width: auto;
+        height: 25vw;
+        border-radius: 35px;
+        padding: 20px;
+    }
+}
+
+
+/* start Animations keyframes */
 /* animation: main1 7s ease-in-out infinite; */
 @keyframes main1a {
     0% {
@@ -600,3 +668,4 @@
         transform: rotateX(360deg) rotateY(360deg) rotate(7200deg);
     }
 }
+/* end Animations keyframes */

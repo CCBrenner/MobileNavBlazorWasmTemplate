@@ -13,14 +13,18 @@
     --app-container-height-percent: 100%;
     --app-container-width: 100vw;
     --app-container-breakpoint1-height: calc(100vh * 0.95);
-    --app-container-breakpoint1-width: calc(56vh * 0.95);
+    --app-container-breakpoint1-height-percent: calc(100% * 0.95);
+    --app-container-breakpoint1-width: calc(75vh * 0.95);
 
     --top-bar-height: 56px; /* top */
     --footer-height: 50px; /* bottom (since applied to nav buttons, subtract) */
     --content-height: calc( var(--app-container-height) - calc(calc(var(--top-bar-height) + var(--footer-height)) + 2px)); /* middle */
 
     --sidebar-width-mobile: 100vw;
-    --mobile-menu-height: calc(calc(65vh - var(--top-bar-height)) - 10px); /* In vh measurement only. */
+
+    --panel-height: var(--panel-height-mobile);
+    --panel-height-mobile: calc(calc(65vh - var(--top-bar-height)) - 10px); /* In vh measurement only. */
+    --panel-height-tablet: calc(calc(65vh - var(--top-bar-height)) - 10px);
 
     --sidebar-width-desktop: 220px;
     --panel-container-width: 70%;
@@ -151,7 +155,9 @@ a, .btn-link {
 @media (min-width: 78vh) {
     :root {
         --app-container-height: var(--app-container-breakpoint1-height);
+        --app-container-height-percent: var(--app-container-breakpoint1-height-percent);
         --app-container-width: var(--app-container-breakpoint1-width);
+        --panel-height: var(--panel-height-tablet);
     }
     .loading-container {
         font-size: 4rem;
