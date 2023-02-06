@@ -242,6 +242,12 @@
     .main5-infinite { animation: main5b 7s linear infinite; }
     /* end Pluggable clases */
 
+    .behind-panel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
     .external-layout-controls {
         display: block;
     }

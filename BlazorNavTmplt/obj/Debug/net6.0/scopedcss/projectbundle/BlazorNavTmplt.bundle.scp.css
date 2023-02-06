@@ -494,6 +494,12 @@
     .main5-infinite[b-1l7w3tgamb] { animation: main5b-b-1l7w3tgamb 7s linear infinite; }
     /* end Pluggable clases */
 
+    .behind-panel[b-1l7w3tgamb] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
     .external-layout-controls[b-1l7w3tgamb] {
         display: block;
     }

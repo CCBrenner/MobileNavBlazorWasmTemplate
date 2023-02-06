@@ -53,24 +53,28 @@
 
 /* end Plugable statuses */
 
-/*
+/* Part of Option 3 */
 @media (min-width: 78vh) {
-    .container-one {
-        top: calc(50vh - calc(calc(var(--top-bar-height) - 16px) * 2.5));
+    .container-one[b-rb87el1kr8] {
+        bottom: calc(calc(4px + calc(var(--panel-height) * 0.5)) - calc(calc(var(--top-bar-height) - 6px) * 2.5));
         right: 0px;
         left: auto;
-        bottom: auto;
-        height: calc(calc(var(--top-bar-height) - 16px) * 5);
+        height: calc(calc(var(--top-bar-height) - 6px) * 5);
         width: calc(var(--top-bar-height) - 16px);
-    }
-    .container-two {
         display: flex;
         flex-direction: column;
+    }
+    .container-two[b-rb87el1kr8] {
         flex: 1;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 4px ;
     }
-    .nav-button {
+    .nav-button[b-rb87el1kr8] {
+        flex: 1;
+        width: calc(var(--top-bar-height) - 24px);
     }
-}*/
+}
 
 @media (min-width: 1008px), (min-width: 110vh) {
 }
