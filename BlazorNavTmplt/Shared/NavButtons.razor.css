@@ -37,17 +37,13 @@
     top: -1px;
 }
 
-.navlink {
-    border-left: 4px solid lightgrey;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex: 1;
+.button-label {
+    display: none;
 }
 
 /* start Plugable statuses */
 
-.button-on-highlight-button {
+.highlight-button {
     background-color: rgba(255,255,255,0.25);
 }
 
@@ -101,9 +97,21 @@
             align-items: center;
         }
 
+    .nav-button {
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .button-label {
+        display: block;
+        margin-left: 7px;
+        font-size: 0.88rem;
+        padding-top: 2px;
+    }
+
     /* start Plugable statuses */
 
-    .button-on-highlight-button {
+    .highlight-button {
         background-color: rgba(255,255,255,0.25);
     }
 

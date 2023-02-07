@@ -37,17 +37,13 @@
     top: -1px;
 }
 
-.navlink[b-rb87el1kr8] {
-    border-left: 4px solid lightgrey;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex: 1;
+.button-label[b-rb87el1kr8] {
+    display: none;
 }
 
 /* start Plugable statuses */
 
-.button-on-highlight-button[b-rb87el1kr8] {
+.highlight-button[b-rb87el1kr8] {
     background-color: rgba(255,255,255,0.25);
 }
 
@@ -101,9 +97,21 @@
             align-items: center;
         }
 
+    .nav-button[b-rb87el1kr8] {
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .button-label[b-rb87el1kr8] {
+        display: block;
+        margin-left: 7px;
+        font-size: 0.88rem;
+        padding-top: 2px;
+    }
+
     /* start Plugable statuses */
 
-    .button-on-highlight-button[b-rb87el1kr8] {
+    .highlight-button[b-rb87el1kr8] {
         background-color: rgba(255,255,255,0.25);
     }
 

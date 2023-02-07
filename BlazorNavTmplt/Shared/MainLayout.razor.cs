@@ -82,6 +82,32 @@
             AnimateMain = "";
             UpdateNav(character);
         }
+        public void UpdateNavFromAppTitle(char character)
+        {
+            UpdateLocation(character);
+            SetAllButtonStatesToFalse();
+            UpdateButtons();
+            LayoutControls = "";
+            AnimateMain = "";
+            switch (character)
+            {
+                case 'A':
+                    NavButtonAStatus = "highlight-button";
+                    break;
+                case 'B':
+                    NavButtonBStatus = "highlight-button";
+                    break;
+                case 'C':
+                    NavButtonCStatus = "highlight-button";
+                    break;
+                case 'D':
+                    NavButtonDStatus = "highlight-button";
+                    break;
+                case 'E':
+                    NavButtonEStatus = "highlight-button";
+                    break;
+            }
+        }
         private bool UpdateButtonStates(bool buttonState)
         {
             if (buttonState)
@@ -113,7 +139,7 @@
             if (!buttonState && !locationState || globalNavButtonState && locationState && !buttonState)
                 return "";
             else
-                return "button-on-highlight-button";
+                return "highlight-button";
         }
         private void UpdatePanels()
         {
@@ -131,11 +157,7 @@
             ContentBlur = buttonState ? "content-blur" : "";
         private void UpdateLocation(char character)
         {
-            locationIsA = false;
-            locationIsB = false;
-            locationIsC = false;
-            locationIsD = false;
-            locationIsE = false;
+            SetAllLocationsToFalse();
             switch (character)
             {
                 case 'A':
@@ -155,7 +177,16 @@
                     break;
             }
         }
+        private void SetAllLocationsToFalse()
+        {
+            locationIsA = false;
+            locationIsB = false;
+            locationIsC = false;
+            locationIsD = false;
+            locationIsE = false;
+        }
 
+        // Animations
         public void ShowLayoutControls(char character)
         {
             UpdateLocation(character);

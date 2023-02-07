@@ -34,7 +34,7 @@
 
 .button-on-show-behind-panel[b-1l7w3tgamb] {
     display: block;
-    background-color: rgba(0,0,60,0.1);
+    background-color: rgba(0,0,60,0.06);
     transition: background-color 0.2s;
 }
 
@@ -305,6 +305,16 @@
         padding: 0px 40px;
         display: flex;
         justify-content: flex-start;
+    }
+    .navbar-brand[b-1l7w3tgamb] {
+        padding: 14px;
+        height: calc(var(--top-bar-height) - 16px);
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand:hover[b-1l7w3tgamb] {
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 8px;
     }
 }
 
