@@ -155,6 +155,12 @@
     display: none;
 }
 
+.behind-panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 
 /* Part of Option2 */
 /*
@@ -176,12 +182,6 @@
 .main5 { animation: main5b 7s linear; }
 .main5-infinite { animation: main5b 7s linear infinite; }
 /* end Pluggable clases 
-
-    .behind-panel {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
 
     .external-layout-controls {
         display: block;
@@ -222,7 +222,7 @@
     }
 }*/
 
-/* Part of Option 3 */
+/* Part of Option3 */
 @media (min-width: 78vh) {
     .main {
         width: 100%;
@@ -238,24 +238,19 @@
     }
 }
 
-/* Part of Option 3 */
+/* Part of Option3 */
+/*
 @media (min-width: 1008px) {
 
     .main {
         width: var(--app-container-width);
     }
 
-    .behind-panel {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
     .external-layout-controls {
         display: block;
     }
 
-    /* start Pluggable clases */
+    /* start Pluggable clases
     .main1 { animation: main1b 7s ease-in-out; }
     .main1-infinite { animation: main1b 7s ease-in-out infinite; }
     .main2 { animation: main2b 10s ease-in-out; }
@@ -266,7 +261,7 @@
     .main4-infinite { animation: main4b 7s ease-in-out infinite; }
     .main5 { animation: main5b 7s linear; }
     .main5-infinite { animation: main5b 7s linear infinite; }
-    /* end Pluggable clases */
+    /* end Pluggable clases
 
     .left-negative-space {
         display: block;
@@ -297,6 +292,19 @@
         height: 25vw;
         border-radius: 35px;
         padding: 20px;
+    }
+}
+*/
+
+/* Part of Option4 */
+@media (min-width: 1008px) {
+    .main {
+        height: 100%;
+    }
+    .header {
+        padding: 0px 40px;
+        display: flex;
+        justify-content: flex-start;
     }
 }
 

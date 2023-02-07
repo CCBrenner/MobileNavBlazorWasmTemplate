@@ -70,3 +70,30 @@
         left: auto;
     }
 }
+
+@media (min-width: 1008px) {
+    .panel-container {
+        width: 320px;
+        right: auto;
+        bottom: auto;
+        top: var(--top-bar-height);
+        left: calc(50% - 286px);
+    }
+    .panel-position-b {
+        left: calc(50% - 172px);
+    }
+
+    .panel-position-c {
+        left: calc(50% - 160px);
+    }
+
+    .panel-position-d {
+        left: auto;
+        right: calc(50% - 176px);
+    }
+
+    .panel-position-e {
+        left: auto;
+        right: calc(50% - 290px);
+    }
+}

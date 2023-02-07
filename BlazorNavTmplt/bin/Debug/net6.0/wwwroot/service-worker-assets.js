@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-bQJCsKtdUeSIjRlTtSzFLOmoQvH80flnYTmFsW5MWN4=",
+      "hash": "sha256-gR6JOYbMphzFyhU6WVXhb+eKz9urpf1iGBxmuAQXKWk=",
       "url": "css\/app.css"
     },
     {
@@ -77,7 +77,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-dWqei3+pBMWjTlE\/GLmMyNuHI\/ACtTHJ7c9IvtTH944=",
+      "hash": "sha256-TaBP4OBmxfg8g99xDufHLBFo20mLAQFKOoioQ8mATcI=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -881,5 +881,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "uU9VWzxf"
+  "version": "hx3+DT5B"
 };

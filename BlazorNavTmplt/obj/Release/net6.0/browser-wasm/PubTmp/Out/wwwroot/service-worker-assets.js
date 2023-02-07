@@ -157,11 +157,11 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-akjvccO9pJ0Frawc8QJVHNhXJHqaUcC\/zJ2ZfenVML8=",
+      "hash": "sha256-knSnE+2OmW1rZlRAlmvMktdQ1TWbJlDGpyg5nKovRho=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
-      "hash": "sha256-bQJCsKtdUeSIjRlTtSzFLOmoQvH80flnYTmFsW5MWN4=",
+      "hash": "sha256-gR6JOYbMphzFyhU6WVXhb+eKz9urpf1iGBxmuAQXKWk=",
       "url": "css\/app.css"
     },
     {
@@ -237,5 +237,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "nRihyRjJ"
+  "version": "pWu\/eRwK"
 };

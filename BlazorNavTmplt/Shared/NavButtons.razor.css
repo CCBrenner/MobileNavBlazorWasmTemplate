@@ -68,7 +68,6 @@
         flex: 1;
         display: flex;
         flex-flow: column wrap;
-        padding: 4px ;
     }
     .nav-button {
         flex: 1;
@@ -76,7 +75,37 @@
     }
 }
 
-@media (min-width: 1008px), (min-width: 110vh) {
+@media (min-width: 1008px) {
+    .container-one {
+        background-color: rgba(0,0,0,0);
+        padding: 1.5px;
+        bottom: auto;
+        right: auto;
+        left: calc(50% - 290px);
+        display: block;
+        height: auto;
+        width: 580px;
+    }
+
+    .container-two {
+        flex-direction: row;
+    }
+    .nav-button {
+        background-color: rgba(0,0,0,0);
+        width: auto;
+        margin: 1px;
+    }
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+            justify-content: center;
+            align-items: center;
+        }
+
+    /* start Plugable statuses */
+
+    .button-on-highlight-button {
+        background-color: rgba(255,255,255,0.25);
+    }
+
+    /* end Plugable statuses */
 }
-
-
