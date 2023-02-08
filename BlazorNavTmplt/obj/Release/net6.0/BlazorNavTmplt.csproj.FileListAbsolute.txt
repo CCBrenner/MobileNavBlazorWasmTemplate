@@ -1656,6 +1656,5 @@ C:\Users\Collyn B - VotP\Desktop\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\
 C:\Users\Collyn B - VotP\Desktop\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\ref\BlazorNavTmplt.dll
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\scopedcss\Shared\AppAnimations.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\scopedcss\Shared\ClosedStageCurtain.razor.rz.scp.css
-C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\scopedcss\Shared\LayerContainer.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\scopedcss\Shared\NavButtons.razor.rz.scp.css
 C:\Users\Collyn B - VotP\Desktop\Professional\Software Engineering\projects\gh_clone_hosting\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\scopedcss\Shared\NavPanels.razor.rz.scp.css

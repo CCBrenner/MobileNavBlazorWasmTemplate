@@ -1,10 +1,10 @@
-name: Build and deploy .NET Core application to Web App BlazorNavTemplate
+name: Build and deploy .NET Core application to Web App BlazorNavTemplate2
 on:
   push:
     branches:
     - main
 env:
-  AZURE_WEBAPP_NAME: BlazorNavTemplate
+  AZURE_WEBAPP_NAME: BlazorNavTemplate2
   AZURE_WEBAPP_PACKAGE_PATH: BlazorNavTmplt\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.BlazorNavTemplate_691F }}
+        publish-profile: ${{ secrets.BlazorNavTemplate2_AEF6 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}

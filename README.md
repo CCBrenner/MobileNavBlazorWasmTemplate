@@ -26,8 +26,8 @@ Features:
 - Special animations 'page' that overlays all other pages for purposes of controlling the lifted app container (the "main" element of the layout) with class-insertion as the means for applying transitions, resizing & animations
 - Options for previewing app as:
       (1) only on mobile; utilize 'closed stage curtain' on other viewport/screen sizes; closed curtain includes message with QR code to easily access the app in the default browser of the user's mobile device (enabling closer proximity to mobile install)
-      (2) mobile + demonstration mode of mobile app with message & QR code to easily access the app in the default browser of the user's mobile device (enabling closer proximity to mobile install) & eternal animations of the app container
-      (3) mobile + tablet with demonstration mode for tablet or mobile (your choice) on viewports/screens of size similar to desktop
+      (2) mobile + demonstration mode of mobile app with message & QR code to easily access the app in the default browser of the user's mobile device (enabling closer proximity to mobile install) & external animations of the app container
+      (3) mobile + tablet with demonstration mode for tablet or mobile on viewports/screens of size similar to desktop; message, animations and QR code included
       (4) mobile + tablet + desktop with no demonstration presentation (full RWD)
 - Some filler pages
       
