@@ -1,1 +1,0 @@
-C:\Users\Collyn B - VotP\Desktop\MobileNavBlazorWasmTemplate\BlazorNavTmplt\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

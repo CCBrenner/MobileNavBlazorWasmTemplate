@@ -7,19 +7,16 @@
     /*  nearly 16:9 aspect ratio (100:56.7)
         4:3 aspect ratio
         100vw;  /* default */
-    
+
     --app-container-height: 100vh;
     --app-container-height-percent: 100%;
     --app-container-width: 100vw;
-
     --app-container-breakpoint1-height: calc(100vh * 1);
     --app-container-breakpoint1-height-percent: 100%;
     --app-container-breakpoint1-width: calc(75vh * 1);
-
     --app-container-breakpoint2-height: calc(100vh * 0.95);
     --app-container-breakpoint2-height-percent: calc(100% * 0.95);
     --app-container-breakpoint2-width: calc(75vh * 0.95);
-
     --top-bar-height: 56px; /* top */
     --footer-height: 50px; /* bottom (since applied to nav buttons, subtract) */
     --content-height: calc( var(--app-container-height) - calc(calc(var(--top-bar-height) + var(--footer-height)) + 2px)); /* middle */
@@ -122,7 +119,8 @@ a, .btn-link {
     justify-content: center;
     align-content: center;
     height: 95vh;
-    font-size: 2rem;z-index: 2;
+    font-size: 2rem;
+    z-index: 2;
 }
 
 .loader {
@@ -161,6 +159,7 @@ a, .btn-link {
         --app-container-width: var(--app-container-breakpoint1-width);
         --panel-height: var(--panel-height-tablet);
     }
+
     .loading-container {
         font-size: 4rem;
     }

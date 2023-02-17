@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-gR6JOYbMphzFyhU6WVXhb+eKz9urpf1iGBxmuAQXKWk=",
+      "hash": "sha256-R0VUMjUySWxvfDHCHdlU2hLQGUD8UMzgtpxhP9i1aqw=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
+      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -53,11 +53,11 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-urd12VpFisM7MxYH5QfXNs1zNpRT7o\/aWp1Qa1ZTlu0=",
+      "hash": "sha256-aEkSK\/DUrC7cKbgF3GFBDMkA0skA9Xo7LWkU\/lKzXZM=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-9q6SO6LPst5xGaaBLQRgEoaytuYeBwn6P9bB5\/157pE=",
+      "hash": "sha256-tbDZG3SMoeo2s7mNjikvQR8bviKkQQAG9lYgJU1LKTY=",
       "url": "manifest.json"
     },
     {
@@ -77,7 +77,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-2+ZxRv6vJn7SPzXuaQNWt\/XdnyHU3bR0SzJRtpf5EA0=",
+      "hash": "sha256-e+X6YDU51GLARNAjwDdwapII84OIF\/6+9GXQeEu9Hd8=",
       "url": "BlazorNavTmplt.styles.css"
     },
     {
@@ -837,7 +837,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-FX20dkt3pkTZVBaZAzhxLMymbikXENxpwTpSErweKCs=",
+      "hash": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",
       "url": "_framework\/dotnet.6.0.12.vcefaxtcla.js"
     },
     {
@@ -865,11 +865,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-5k\/PRZ8qZavqMl7ruWvSkZY391FnyqMm3w7\/n9pfj7Q=",
+      "hash": "sha256-5SisctaBaaSf12YJEp\/XodfjMie4vkT9gtUeiqu52bI=",
       "url": "_framework\/BlazorNavTmplt.dll"
     },
     {
-      "hash": "sha256-pR\/Kn4XXgsWpnZVuVG+vnnR8c6ew1J+bxrLD4i3BKJU=",
+      "hash": "sha256-KumBLDv3aE03u4s8B8Z9XnhuetZAsZTpXVtLOz9IB7E=",
       "url": "_framework\/BlazorNavTmplt.pdb"
     },
     {
@@ -877,9 +877,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-ObENx4m1YgGtQTpNBRxDMi8NoAFRXX8PM3nELbFK8F8=",
+      "hash": "sha256-FP0gUOTDS0GdLbqHWtBqzQJ3wc8irYgae78SDBIUW\/0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "Jpj2krNt"
+  "version": "2SY5LcE3"
 };
